@@ -24,7 +24,6 @@ Just so so. No strong baselines.
 
 max the information gain(mutual information).
 
-#### [blog](https://www.zhihu.com/search?type=content&amp;q=VIME)
+#### [blog](https://www.zhihu.com/search?type=content&amp;q=VIME) and [notes](https://github.com/youngzhou1999/readinglist/tree/main/README.assets/VIME.png)
 
-<img src="README.assets/image-20211228235159194.png" alt="image-20211228235159194" style="zoom:50%;" />
 
