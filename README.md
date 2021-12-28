@@ -3,8 +3,7 @@
 ## Exploration
 
 ### VIME: Variational Information Maximizing Exploration
-
-[arxiv]: https://arxiv.org/abs/1605.09674
+[arxiv](https://arxiv.org/abs/1605.09674)
 
 #### Main contribution and core idea
 
@@ -28,7 +27,7 @@ max the information gain(mutual information).
 
 #### Quote
 
-[blog]: https://www.zhihu.com/search?type=content&amp;q=VIME
+[blog](https://www.zhihu.com/search?type=content&amp;q=VIME)
 
-![image-20211228235159194](README.assets/image-20211228235159194.png)
+<img src="README.assets/image-20211228235159194.png" alt="image-20211228235159194" style="zoom:50%;" />
 
