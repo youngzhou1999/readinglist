@@ -2,7 +2,7 @@
 
 ## Exploration
 
-### [VIME: Variational Information Maximizing Exploration](https://arxiv.org/abs/1605.09674)
+### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
 
 #### Main contribution and core idea
 
@@ -26,7 +26,7 @@ max the information gain(mutual information).
 
 #### [blog](https://www.zhihu.com/search?type=content&amp;q=VIME) and [notes](https://github.com/youngzhou1999/readinglist/tree/main/README.assets/VIME.png)
 
-### [Self-Supervised Exploration via Disagreement](https://arxiv.org/abs/1906.04161)
+### [Self-Supervised Exploration via Disagreement{1906}](https://arxiv.org/abs/1906.04161)
 
 #### Main contribution and core idea
 
@@ -51,4 +51,32 @@ baselines: pathak 2017,large scale study of curiosity-driven{all prediction erro
 no/sparse reward envs.
 
 **check the multi-step method**.
+
+### [Deep Exploration via Bootstrapped DQN{1602}](https://arxiv.org/abs/1602.04621)
+
+#### Main contribution and core idea
+
+contribution: a simple yet efficient DQN algorithm with good ability to explore.
+
+core idea: multi-head q. inspired by TS(random choose head).
+
+![image-20220102234524984](README.assets/bootstrapped_dqn.png)
+
+**Not tried to tract exact posterior and RANDOM initialization in drl.**
+
+#### Surprising, difficult and confusing part
+
+surprsing: use simple task to show the **distribution** of what learned, which is similar to the true posterior.
+
+Their team  do exploration for a long time.(very persuasive and respect).
+
+### Experiments and baselines
+
+atrai; DQN. exps are ok.
+
+#### How to apply and anywhere
+
+multi-head -> assemble model and disagreement.
+
+how: **multi-step, pure-exploration.**
 
