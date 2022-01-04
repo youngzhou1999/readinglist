@@ -80,3 +80,29 @@ multi-head -> assemble model and disagreement.
 
 how: **multi-step, pure-exploration.**
 
+### [Unifying Count-Based Exploration and Intrinsic Motivation{1606}](https://arxiv.org/abs/1606.01868)
+
+#### Main contribution and core idea
+
+contribution: unify pseudo-count in deep rl which is how to get hat{N(s)}, hat{n}. use model to build probability of counts.
+
+core idea: use density model to produce density estimation and re-catch N(s), n. use pseudo-count to build a bonus.(normally N^{1/2} or N^{-1}). 
+
+#### Surprising, difficult and confusing part
+
+surprising: make drl countable by transfering algo in traditional/small MDP.(count by table).
+
+diff: math derive in PG.(But it's ok now).
+
+### Experiments and baselines
+
+atari, DQN, UCB.  good performance. using DQN with bonus can work well in montezuma's revenge(15 rooms in 50m steps).
+
+#### How to apply and anywhere
+
+how: with other algo(or modify detail of count-based).
+
+anywhere: pseudo-count algos always use this def. like pixelcnn, #count, ex2.
+
+**mark here(22/1/4): pseudo-count algos are not that good when compared to other algos nowadays.**
+
