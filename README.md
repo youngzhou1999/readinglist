@@ -2,6 +2,16 @@
 
 ## Exploration
 
+[VIME: Variational Information Maximizing Exploration{1605}](#VIME:-Variational-Information-Maximizing-Exploration{1605})
+
+[]()
+
+[]()
+
+[]()
+
+[]()
+
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
 
 #### Main contribution and core idea
