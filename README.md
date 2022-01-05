@@ -1,10 +1,7 @@
 # readinglist
 
 ## Exploration
-
-[VIME: Variational Information Maximizing Exploration{1605}](#VIME:-Variational-Information-Maximizing-Exploration{1605})
-
-[]()
+[VIME: Variational Information Maximizing Exploration{1605}](#vime)
 
 []()
 
@@ -12,7 +9,10 @@
 
 []()
 
-### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
+[]()
+
+### VIME
+[VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
 
 #### Main contribution and core idea
 
@@ -26,7 +26,7 @@ surprising: model good to explain the goal is to max the reduction in uncertaint
 
 difficult: theoretical math with practical implementation
 
-### Experiments and baselines
+#### Experiments and baselines
 
 Just so so. No strong baselines.
 
@@ -35,6 +35,8 @@ Just so so. No strong baselines.
 max the information gain(mutual information).
 
 #### [blog](https://www.zhihu.com/search?type=content&amp;q=VIME) and [notes](https://github.com/youngzhou1999/readinglist/tree/main/README.assets/VIME.png)
+
+[back](#exploration)
 
 ### [Self-Supervised Exploration via Disagreement{1906}](https://arxiv.org/abs/1906.04161)
 
@@ -50,7 +52,7 @@ idea: minimize prediction error and maximize the prediction difference at the sa
 
 good writing, easy to read, simple yet efficient algo. 
 
-### Experiments and baselines
+#### Experiments and baselines
 
 atari, minist, maze, mujuco and real robot: good performance.
 
@@ -80,7 +82,7 @@ surprsing: use simple task to show the **distribution** of what learned, which i
 
 Their team  do exploration for a long time.(very persuasive and respect).
 
-### Experiments and baselines
+#### Experiments and baselines
 
 atrai; DQN. exps are ok.
 
@@ -104,7 +106,7 @@ surprising: make drl countable by transfering algo in traditional/small MDP.(cou
 
 diff: math derive in PG.(But it's ok now).
 
-### Experiments and baselines
+#### Experiments and baselines
 
 atari, DQN, UCB.  good performance. using DQN with bonus can work well in montezuma's revenge(15 rooms in 50m steps).
 
@@ -134,7 +136,7 @@ first part: maximize  the likelihood of output. second part: push b(s) into 0 or
 
 surprising: use noise inject in sigmoid function(But didn't that popular in other place?).
 
-### Experiments and baselines
+#### Experiments and baselines
 
 continuous: RLlab, VIME. 
 
