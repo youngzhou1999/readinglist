@@ -7,7 +7,7 @@
 
 [Deep Exploration via Bootstrapped DQN{1602}](#bootstrapped-dqn)
 
-[Unifying Count-Based Exploration and Intrinsic Motivation](#unifying-count-based-exploration)
+[Unifying Count-Based Exploration and Intrinsic Motivation{1606}](#unifying-count-based-exploration)
 
 [#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning{1611}](#hash-exploration)
 
@@ -36,7 +36,7 @@ max the information gain(mutual information).
 
 #### [blog](https://www.zhihu.com/search?type=content&amp;q=VIME) and [notes](https://github.com/youngzhou1999/readinglist/tree/main/README.assets/VIME.png)
 
-[BACK TO LIST](#exploration)
+[BACK TO LIST](#exploration)
 
 ### Self-Supervised Exploration via Disagreement
 [Self-Supervised Exploration via Disagreement{1906}](https://arxiv.org/abs/1906.04161)
@@ -65,7 +65,7 @@ no/sparse reward envs.
 
 **check the multi-step method**.
 
-[BACK TO LIST](#exploration)
+[BACK TO LIST](#exploration)
 
 ### Bootstrapped DQN
 [Deep Exploration via Bootstrapped DQN{1602}](https://arxiv.org/abs/1602.04621)
@@ -96,7 +96,7 @@ multi-head -> assemble model and disagreement.
 
 how: **multi-step, pure-exploration.**
 
-[BACK TO LIST](#exploration)
+[BACK TO LIST](#exploration)
 
 ### Unifying Count-Based Exploration
 [Unifying Count-Based Exploration and Intrinsic Motivation{1606}](https://arxiv.org/abs/1606.01868)
@@ -125,7 +125,7 @@ anywhere: pseudo-count algos always use this def. like pixelcnn, #count, ex2.
 
 **mark here(22/1/4): pseudo-count algos are not that good when compared to other algos nowadays.**
 
-[BACK TO LIST](#exploration)
+[BACK TO LIST](#exploration)
 
 ### Hash Exploration
 [#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning{1611}](https://arxiv.org/abs/1611.04717)
@@ -158,7 +158,7 @@ conclusion: in continuous setting, it beats VIME. very good.
 
 how: low dimension approximation(like vae).
 
-[BACK TO LIST](#exploration)
+[BACK TO LIST](#exploration)
 
  
 
