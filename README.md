@@ -106,3 +106,35 @@ anywhere: pseudo-count algos always use this def. like pixelcnn, #count, ex2.
 
 **mark here(22/1/4): pseudo-count algos are not that good when compared to other algos nowadays.**
 
+### [#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning{1611}](https://arxiv.org/abs/1611.04717)
+
+#### Main contribution and core idea
+
+contribution: A count-based algo which can be used in multi-domain.
+
+core idea: use sim-hash to build state count.
+
+![image-20220105102104621](README.assets/hash.png)
+
+![image-20220105102209442](README.assets/hash_loss.png)
+
+first part: maximize  the likelihood of output. second part: push b(s) into 0 or 1 to count better.  
+
+#### Surprising, difficult and confusing part
+
+surprising: use noise inject in sigmoid function(But didn't that popular in other place?).
+
+### Experiments and baselines
+
+continuous: RLlab, VIME. 
+
+ALE: (performance just so so), **using BASS future is well.**
+
+conclusion: in continuous setting, it beats VIME. very good.
+
+#### How to apply and anywhere
+
+how: low dimension approximation(like vae).
+
+ 
+
