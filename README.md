@@ -12,7 +12,7 @@
 [#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning{1611}](#hash-exploration)
 
 ### VIME
-[VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
+### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
 
 #### Main contribution and core idea
 
@@ -39,7 +39,7 @@ max the information gain(mutual information).
 [BACK TO LIST](#exploration)
 
 ### Self-Supervised Exploration via Disagreement
-[Self-Supervised Exploration via Disagreement{1906}](https://arxiv.org/abs/1906.04161)
+### [Self-Supervised Exploration via Disagreement{1906}](https://arxiv.org/abs/1906.04161)
 
 #### Main contribution and core idea
 
@@ -68,7 +68,7 @@ no/sparse reward envs.
 [BACK TO LIST](#exploration)
 
 ### Bootstrapped DQN
-[Deep Exploration via Bootstrapped DQN{1602}](https://arxiv.org/abs/1602.04621)
+### [Deep Exploration via Bootstrapped DQN{1602}](https://arxiv.org/abs/1602.04621)
 
 #### Main contribution and core idea
 
@@ -99,7 +99,7 @@ how: **multi-step, pure-exploration.**
 [BACK TO LIST](#exploration)
 
 ### Unifying Count-Based Exploration
-[Unifying Count-Based Exploration and Intrinsic Motivation{1606}](https://arxiv.org/abs/1606.01868)
+### [Unifying Count-Based Exploration and Intrinsic Motivation{1606}](https://arxiv.org/abs/1606.01868)
 
 #### Main contribution and core idea
 
@@ -128,7 +128,7 @@ anywhere: pseudo-count algos always use this def. like pixelcnn, #count, ex2.
 [BACK TO LIST](#exploration)
 
 ### Hash Exploration
-[#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning{1611}](https://arxiv.org/abs/1611.04717)
+### [#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning{1611}](https://arxiv.org/abs/1611.04717)
 
 #### Main contribution and core idea
 
