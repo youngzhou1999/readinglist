@@ -11,6 +11,8 @@
 
 [#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning{1611}](#hash-exploration)
 
+[EX2: Exploration with Exemplar Models for Deep Reinforcement Learning{1703}](#ex2)
+
 ### VIME
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
 
@@ -160,5 +162,49 @@ how: low dimension approximation(like vae).
 
 [BACK TO LIST](#exploration)
 
- 
+ ### EX2
+
+### [EX2: Exploration with Exemplar Models for Deep Reinforcement Learning{1703}](https://arxiv.org/abs/1703.01260)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. based entirely on discriminative trained exemplar models. 
+
+2. compare new state to past state.
+
+3. no explicit density model.
+
+core idea: 
+
+discriminate new state from past states(no explicit density model to measure novelty).
+
+![image-20220106205126009](README.assets/ex2.png)
+
+![image-20220106205324621](README.assets/ex2_obj.png)
+
+![image-20220106205606212](README.assets/ex2_algo.png)
+
+where D is a NN.
+
+#### Surprising, difficult and confusing part
+
+surprising: good math story and exps.
+
+difficult: math derivative in eq(1) with implicit density estimation. 
+
+#### Experiments and baselines
+
+baselines: VIME, #exploration, TRPO
+
+exps are good. beat VIME, similar with #.
+
+#### How to apply and anywhere
+
+the idea of new state/past states distinguish is good. but none otherwhere.
+
+[BACK TO LIST](#exploration)
+
+
 
