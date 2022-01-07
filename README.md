@@ -214,7 +214,7 @@ the idea of new state/past states distinguish is good. but none otherwhere.
 
 #### Main contribution and core idea
 
-contribution: a learned system dynamics as forward model and using **prediction error ** as bonus.
+contribution: a learned system dynamics as forward model and using **prediction error** as bonus.
 
 core idea: [notes](https://github.com/youngzhou1999/readinglist/tree/main/README.assets/incentivizing.png)
 
