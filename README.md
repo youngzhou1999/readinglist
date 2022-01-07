@@ -216,9 +216,7 @@ the idea of new state/past states distinguish is good. but none otherwhere.
 
 contribution: a learned system dynamics as forward model and using **prediction error **as bonus.
 
-core idea: 
-
-[notes](https://github.com/youngzhou1999/readinglist/tree/main/README.assets/incentivizing.png)
+core idea: [notes](https://github.com/youngzhou1999/readinglist/tree/main/README.assets/incentivizing.png)
 
 ![image-20220107143411838](README.assets/incentivizing_algo.png)
 
@@ -236,7 +234,7 @@ In atari, it's useful.
 
 #### How to apply and anywhere
 
-**prediction error bonus** with **model-based(learning) exploration** have many paper(simple, efficient).
+**prediction error bonus** with **model-based(learning) exploration** have many paper(simple, efficient).
 
 [BACK TO LIST](#exploration)
 
