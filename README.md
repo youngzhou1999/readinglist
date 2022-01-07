@@ -13,6 +13,8 @@
 
 [EX2: Exploration with Exemplar Models for Deep Reinforcement Learning{1703}](#ex2)
 
+[Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models{1507}](#incentivizing-exploration-with-deep-predictive-models)
+
 ### VIME
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
 
@@ -203,6 +205,38 @@ exps are good. beat VIME, similar with #.
 #### How to apply and anywhere
 
 the idea of new state/past states distinguish is good. but none otherwhere.
+
+[BACK TO LIST](#exploration)
+
+### Incentivizing Exploration With Deep Predictive Models
+
+### [Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models{1507}](https://arxiv.org/abs/1507.00814)
+
+#### Main contribution and core idea
+
+contribution: a learned system dynamics as forward model and using **prediction error **as bonus.
+
+core idea: 
+
+[notes](https://github.com/youngzhou1999/readinglist/tree/main/README.assets/incentivizing.png)
+
+![image-20220107143411838](README.assets/incentivizing_algo.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: model M is rather simple as σ.
+
+#### Experiments and baselines
+
+DQN+bonus, atari(with static/dynamic AE).
+
+baseline: DQN + other traditional bonus.
+
+In atari, it's useful.
+
+#### How to apply and anywhere
+
+**prediction error bonus** with **model-based(learning) exploration** have many paper(simple, efficient).
 
 [BACK TO LIST](#exploration)
 
