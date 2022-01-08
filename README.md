@@ -15,9 +15,10 @@
 
 [Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models{1507}](#incentivizing-exploration-with-deep-predictive-models)
 
-[Count-Based Exploration with Neural Density Models{1703}]{#count-based-exploration-with-pixelcnn}
+[Count-Based Exploration with Neural Density Models{1703}](#count-based-exploration-with-pixelcnn)
 
 ### VIME
+
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
 
 #### Main contribution and core idea
