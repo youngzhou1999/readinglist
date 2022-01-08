@@ -15,6 +15,8 @@
 
 [Incentivizing Exploration In Reinforcement Learning With Deep Predictive Models{1507}](#incentivizing-exploration-with-deep-predictive-models)
 
+[Count-Based Exploration with Neural Density Models{1703}]{#count-based-exploration-with-pixelcnn}
+
 ### VIME
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
 
@@ -214,7 +216,7 @@ the idea of new state/past states distinguish is good. but none otherwhere.
 
 #### Main contribution and core idea
 
-contribution: a learned system dynamics as forward model and using **prediction error** as bonus.
+contribution: a learned system dynamics as forward model and using **prediction error** as bonus.
 
 core idea: [notes](https://github.com/youngzhou1999/readinglist/tree/main/README.assets/incentivizing.png)
 
@@ -235,6 +237,40 @@ In atari, it's useful.
 #### How to apply and anywhere
 
 **prediction error bonus** with **model-based(learning) exploration** have many paper(simple, efficient).
+
+[BACK TO LIST](#exploration)
+
+### Count-based Exploration with PixelCNN
+
+### [Count-Based Exploration with Neural Density Models{1703}](https://arxiv.org/abs/1703.01310)
+
+#### Main contribution and core idea
+
+contribution: use complicated density model and explain the role of monte carlo in exploration.
+
+core idea: use PixelCNN as density model.
+
+![image-20220108215641864](README.assets/pred_gain.png)
+
+![image-20220108220323964](README.assets/pixelcnn_bonus.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: MMC is rather good.(monte-carlo in exloration as noise)
+
+difficult: no source code.
+
+confusing: how to deal with 4 channel  in atrai with pixelcnn(maybe on channel).
+
+#### Experiments and baselines
+
+atrai, dqn mc/no mc, dqn cts, reactor with retrace.
+
+exps are good, but re-cons in minigrid is painful.
+
+#### How to apply and anywhere
+
+how: mmc or mc(long horizon) in exploration is good.
 
 [BACK TO LIST](#exploration)
 
