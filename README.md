@@ -17,6 +17,8 @@
 
 [Count-Based Exploration with Neural Density Models{1703}](#count-based-exploration-with-pixelcnn)
 
+[Exploration by Random Network Distillation{1810}](#rnd)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -272,6 +274,59 @@ exps are good, but re-cons in minigrid is painful.
 #### How to apply and anywhere
 
 how: mmc or mc(long horizon) in exploration is good.
+
+[BACK TO LIST](#exploration)
+
+### RND
+
+### [Exploration by Random Network Distillation{1810}](https://arxiv.org/abs/1810.12894)
+
+#### Main contribution and core idea
+
+contribution: a new way to explore by **prediction error**. montezuma's revenge beats human.
+
+core idea: use a **random & fixed** network as target.
+
+![image-20220109153533911](README.assets/rnd.png)
+
+intuition: for a network f, the prediction error is higher when the input x is more different with the data it has seen before. 
+
+#### Surprising, difficult and confusing part
+
+surprising: conclude 4  reasons for high prediction error.
+
+1. training data not enough.
+2. stochastic objective function
+3. wrong model
+4. problem with optimization.
+
+we encourage 1 and discourage 2,3,4.
+
+training setting detail: 
+
+1. non episodic in intrinsic training(constant information for exploration).
+2. episodic for extrinsic training(as a ddl in case of agent stuck in the start).
+
+confusing: actual frame is more than figure(maybe figure cut).
+
+#### Experiments and baselines
+
+PPO, RND, Dynamics(Hagan 2018).
+
+ablation: 1. cnn, rnn 2. num of envs 3. episodic/non-episodic
+
+conclusion: 
+
+1. in no extrinsic reward setting, non-episode perform better.
+2. in extrinsic rewarad setting, **reward comes from two head(extrinsic and intrinsic)**.
+
+#### How to apply and anywhere
+
+how: policy with random network to get a boarder distribution.
+
+anywhere: lilichen's new paper and ngu.
+
+#### [blog](https://zhuanlan.zhihu.com/p/146309991)
 
 [BACK TO LIST](#exploration)
 
