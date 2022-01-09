@@ -1,13 +1,13 @@
 # readinglist
 
 ## Exploration
-[VIME: Variational Information Maximizing Exploration{1605}](#vime)
+[VIME: Variational Information Maximizing Exploration{1605}](#vime):+1:
 
-[Self-Supervised Exploration via Disagreement{1906}](#self-supervised-exploration-via-disagreement)
+[Self-Supervised Exploration via Disagreement{1906}](#self-supervised-exploration-via-disagreement):fire::+1:
 
 [Deep Exploration via Bootstrapped DQN{1602}](#bootstrapped-dqn)
 
-[Unifying Count-Based Exploration and Intrinsic Motivation{1606}](#unifying-count-based-exploration)
+[Unifying Count-Based Exploration and Intrinsic Motivation{1606}](#unifying-count-based-exploration):+1:
 
 [#Exploration: A Study of Count-Based Exploration for Deep Reinforcement Learning{1611}](#hash-exploration)
 
@@ -17,7 +17,7 @@
 
 [Count-Based Exploration with Neural Density Models{1703}](#count-based-exploration-with-pixelcnn)
 
-[Exploration by Random Network Distillation{1810}](#rnd)
+[Exploration by Random Network Distillation{1810}](#rnd):fire::+1:
 
 ### VIME
 
