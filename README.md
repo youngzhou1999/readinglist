@@ -19,6 +19,8 @@
 
 [Exploration by Random Network Distillation{1810}](#rnd):fire::+1:
 
+[Randomized Prior Functions for Deep Reinforcement Learning{1806}](#random-prior-functions)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -327,6 +329,46 @@ how: policy with random network to get a boarder distribution.
 anywhere: lilichen's new paper and ngu.
 
 #### [blog](https://zhuanlan.zhihu.com/p/146309991)
+
+[BACK TO LIST](#exploration)
+
+### Random Prior Functions
+
+### [Randomized Prior Functions for Deep Reinforcement Learning{1806}](https://arxiv.org/abs/1806.03335)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. improve bootstrapped q, analysis prior in rl.
+2. design a random, untrained **prior** network.
+
+core idea: 
+
+prior + noise  -> ensemble diverse -> posterior(random) like TS.
+
+![image-20220110131547385](README.assets/rpf.png)
+
+#### Surprising, difficult and confusing part
+
+easy to read.
+
+#### Experiments and baselines
+
+baselines: epsilon-greedy, bootstrapped(bs), BSR(bs + L2), BSP(bs + prior)
+
+exps:
+
+1. scale up
+2. carpole, swing-up
+
+3. MR: BSP 2000+(good for dqn based)
+
+#### How to apply and anywhere
+
+how: prior regularize. (maybe) for any objetcive function in rl, we can add a **random, fixed and untrained network to encourage exploration**.
+
+anywhere:  RND
 
 [BACK TO LIST](#exploration)
 
