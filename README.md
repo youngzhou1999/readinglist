@@ -21,6 +21,8 @@
 
 [Randomized Prior Functions for Deep Reinforcement Learning{1806}](#random-prior-functions)
 
+[Large-Scale Study of Curiosity-Driven Learning{1808}](#large-scale-study-of-curiosity-driven-learning)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -369,6 +371,47 @@ exps:
 how: prior regularize. (maybe) for any objetcive function in rl, we can add a **random, fixed and untrained network to encourage exploration**.
 
 anywhere:  RND
+
+[BACK TO LIST](#exploration)
+
+### Large-Scale Study of Curiosity-Driven Learning
+
+### [Large-Scale Study of Curiosity-Driven Learning{1808}](https://arxiv.org/abs/1808.04355)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. explore the good/limits of curiosity based exploration(prediction error).
+2. discuss the φ(x) and its performance in origin/generation setting.
+
+core idea:
+
+![image-20220111202349423](README.assets/large_curiosity.png)
+
+#### Surprising, difficult and confusing parts
+
+surprising: 
+
+1. pre-trained VAE: biased to where the agent started.
+2. normalization: advantage, obs, reward
+3. **inf horizon**
+
+#### Experiments and baselines
+
+may aspects:
+
+1. embedding: origin random good. generation: learned good.
+2. parallel env 128, very useful.
+3. noisy-tv is the limit of curiosity based.
+
+#### How to apply and anywhere
+
+pure exploration, inf horizon setting.
+
+anywhere: RND(although they are in the same period).
+
+#### [blog](https://zhuanlan.zhihu.com/p/84998411)(rather good)
 
 [BACK TO LIST](#exploration)
 
