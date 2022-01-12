@@ -23,6 +23,8 @@
 
 [Large-Scale Study of Curiosity-Driven Learning{1808}](#large-scale-study-of-curiosity-driven-learning)
 
+[Dynamic Bottleneck for Robust Self-Supervised Exploration{2110}](#dynamic-bottlneck):fire::+1:
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -412,6 +414,66 @@ pure exploration, inf horizon setting.
 anywhere: RND(although they are in the same period).
 
 #### [blog](https://zhuanlan.zhihu.com/p/84998411)(rather good)
+
+[BACK TO LIST](#exploration)
+
+### Dynamic Bottleneck
+
+### [Dynamic Bottleneck for Robust Self-Supervised Exploration{2110}](https://arxiv.org/abs/2110.10735)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. handle dynamic-irrelevant information target robust policy(handle noisy env).
+2. build intrinsic reward for self-supervised exploration.
+
+core idea:
+
+1. use **Information bottleneck(and contrastive learning)** to get a good reprresentation and use variational method to optimize.
+2. build a bonys with Kl-divergence(encoder | Gaussian) as self-supervised exploration.
+
+#### Surprising, difficult and confusing part
+
+surprising: use variational method to optimize the upper/lower bound of the objective(holds for non negativity of KL-divergence).
+
+difficult: 
+
+1. introduce InfoNCE loss's proof.
+2. relationship/similarity of count-based/curiosity-based exploration in linear/small tabular case.
+
+#### Experiments and baselines
+
+exps are done in atari. results are good.
+
+baselines: ICM, Disagreement, Curiosity Bottleneck, Random(for SSE).
+
+exps:
+
+1. SSE setting
+2. white-noisy env
+3. abiliation
+4. visualization of representation in low dimention.
+
+#### How to apply and anywhere
+
+how:
+
+1. intrinsic reward for SSE(**normally constrain encoder to a boarder distribution)**
+
+2. variational method  for information-based exloration.
+
+anywhere: several IB-based exploration paper.
+
+#### Anything to further read
+
+SSL: [18] NIPS20. [46] ICLR21.
+
+Curiosity Bottleneck: [26] ICML19.
+
+in AD noise: [34] arXiv 18
+
+RE3(enropy-based): [47] ICML 21.
 
 [BACK TO LIST](#exploration)
 
