@@ -23,7 +23,7 @@
 
 [Large-Scale Study of Curiosity-Driven Learning{1808}](#large-scale-study-of-curiosity-driven-learning)
 
-[Dynamic Bottleneck for Robust Self-Supervised Exploration{2110}](#dynamic-bottlneck):fire::+1:
+[Dynamic Bottleneck for Robust Self-Supervised Exploration{2110}](#dynamic-bottleneck):fire::+1:
 
 ### VIME
 
