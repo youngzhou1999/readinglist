@@ -25,6 +25,8 @@
 
 [Dynamic Bottleneck for Robust Self-Supervised Exploration{2110}](#dynamic-bottleneck):fire::+1:
 
+[Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}](#curiosity-bottleneck-exploration-by-distilling-task-specific-novelty)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -430,7 +432,7 @@ contribution:
 
 core idea:
 
-1. use **Information bottleneck(and contrastive learning)** to get a good reprresentation and use variational method to optimize.
+1. use **Information bottleneck(and contrastive learning)** to get a good reprresentation and use variational method to optimize.
 2. build a bonys with Kl-divergence(encoder | Gaussian) as self-supervised exploration.
 
 #### Surprising, difficult and confusing part
@@ -474,6 +476,42 @@ Curiosity Bottleneck: [26] ICML19.
 in AD noise: [34] arXiv 18
 
 RE3(enropy-based): [47] ICML 21.
+
+[BACK TO LIST](#exploration)
+
+### Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}
+
+### [Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty](http://proceedings.mlr.press/v97/kim19c.html)
+
+#### Main contribution and core idea
+
+contribution: use IB to distille task-specific novelty of state.
+
+core idea:
+
+optimize variational bound. 
+
+![image-20220113223930608](README.assets/cb.png)
+
+KL as a reguliazer.
+
+#### Surprising, difficult and confusing part
+
+surprising: good explaition.
+
+difficult: the derivative of intrinsic reward. 
+
+#### Experiments and baselines
+
+exps: mnits, atari baselines: CB-noKL, RND, SimHash.
+
+exps are good. 
+
+#### How to apply and anywhere
+
+IB based method to do exploration.
+
+#### [blog](https://zhuanlan.zhihu.com/p/163745016)
 
 [BACK TO LIST](#exploration)
 
