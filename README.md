@@ -479,9 +479,9 @@ RE3(enropy-based): [47] ICML 21.
 
 [BACK TO LIST](#exploration)
 
-### Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}
+### Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty
 
-### [Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty](http://proceedings.mlr.press/v97/kim19c.html)
+### [Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}](http://proceedings.mlr.press/v97/kim19c.html)
 
 #### Main contribution and core idea
 
