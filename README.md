@@ -25,7 +25,7 @@
 
 [Dynamic Bottleneck for Robust Self-Supervised Exploration{2110}](#dynamic-bottleneck):fire::+1:
 
-[Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}](#curiosity-bottleneck-exploration-by-distilling-task-specific-novelty)
+[Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}](#curiosity-bottleneck):fire:
 
 ### VIME
 
@@ -479,37 +479,50 @@ RE3(enropy-based): [47] ICML 21.
 
 [BACK TO LIST](#exploration)
 
-### Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty
+### Curiosity Bottleneck
 
 ### [Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}](http://proceedings.mlr.press/v97/kim19c.html)
 
 #### Main contribution and core idea
 
-contribution: use IB to distille task-specific novelty of state.
+contribution: use Information Bottleneck to distill task-specific novelty of state.
 
 core idea:
+
+![image-20220114113055865](README.assets/image-20220114113055865.png)
 
 optimize variational bound. 
 
 ![image-20220113223930608](README.assets/cb.png)
 
-KL as a reguliazer.
+KL as regularization.
 
 #### Surprising, difficult and confusing part
 
-surprising: good explaition.
+surprising: explain why IB.
 
-difficult: the derivative of intrinsic reward. 
+1. minimize the average code-length of observation x -> minimize entropy H(Z).
+2. discard information of x to exclude task-irrelevant information -> maximize entropy H(Z|X).
+3. preserve information related to Y -> maxmize I(Z;Y).
+
+difficult and confusing : the derivative of intrinsic reward.
+
+ ![image-20220114112846030](README.assets/cb_ir.png)
 
 #### Experiments and baselines
 
-exps: mnits, atari baselines: CB-noKL, RND, SimHash.
+baselines: CB-noKL, RND, SimHash.
 
-exps are good. 
+exps:
+
+1. mnist: detect novelty of KL(p|q).
+2. atari: mr 2500(below RND in case without distraction).
 
 #### How to apply and anywhere
 
-IB based method to do exploration.
+IB based method to do exploration. 
+
+IB can be seen as a β-VAE.
 
 #### [blog](https://zhuanlan.zhihu.com/p/163745016)
 
