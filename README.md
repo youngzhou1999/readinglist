@@ -27,7 +27,7 @@
 
 [Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}](#curiosity-bottleneck):fire:
 
-[State Entropy Maximization with Random Encoders for Efficient Exploration{}](#re3:-random-encoders-for-efficient-exploration)
+[State Entropy Maximization with Random Encoders for Efficient Exploration{2102}](#re3:-random-encoders-for-efficient-exploration):fire::+1:
 
 ### VIME
 
