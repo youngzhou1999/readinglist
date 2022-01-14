@@ -27,7 +27,7 @@
 
 [Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}](#curiosity-bottleneck):fire:
 
-[State Entropy Maximization with Random Encoders for Efficient Exploration{2102}](#re3:-random-encoders-for-efficient-exploration):fire::+1:
+[State Entropy Maximization with Random Encoders for Efficient Exploration{2102}](#re3-random-encoders-for-efficient-exploration):fire::+1:
 
 ### VIME
 
@@ -530,7 +530,7 @@ IB can be seen as a β-VAE.
 
 [BACK TO LIST](#exploration)
 
-### RE3: Random Encoders for Efficient Exploration
+### RE3 Random Encoders for Efficient Exploration
 
 ### [State Entropy Maximization with Random Encoders for Efficient Exploration{2102}](https://arxiv.org/abs/2102.09430)
 
