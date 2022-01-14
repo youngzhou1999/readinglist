@@ -552,15 +552,13 @@ core idea:
 
 #### Surprising, difficult and confusing part
 
-surprising:
-
-k-nearest neighbor entropy estimator and random encoders.
+surprising: k-nearest neighbor entropy estimator and random encoders.
 
 why random encoders(the intuition behind): representation of random encoder effectively captures information about similarity between states.
 
 #### Experiments and baselines
 
-exps: many abiliation exps. taansks in deepmind control suite and mingrid benchmark.
+exps: many abiliation exps. tasks in deepmind control suite and minigrid benchmark.
 
 baselines: DrQ, RAD, Dreamer. 
 
@@ -570,8 +568,8 @@ how: I want to use re3 with dreamer in carla(mostly dreamer).
 
 anywhere:
 
-1. random encoder: many paper but this is interesting for suing entropy as exploration(usually in prediction based exploration).
-2. k-nearest neighbor: many papers illustrated in this paper(let to be further reading).
+1. random encoder: many papers but this is interesting for suing entropy as exploration(usually in prediction based exploration).
+2. k-nearest neighbor: many papers illustrated in this paper(let it be further reading).
 
 #### Anything to further read
 
