@@ -27,6 +27,8 @@
 
 [Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}](#curiosity-bottleneck):fire:
 
+[State Entropy Maximization with Random Encoders for Efficient Exploration{}](#re3:-random-encoders-for-efficient-exploration)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -525,6 +527,34 @@ IB based method to do exploration.
 IB can be seen as a β-VAE.
 
 #### [blog](https://zhuanlan.zhihu.com/p/163745016)
+
+[BACK TO LIST](#exploration)
+
+### RE3: Random Encoders for Efficient Exploration
+
+### [State Entropy Maximization with Random Encoders for Efficient Exploration{2102}](https://arxiv.org/abs/2102.09430)
+
+#### Main contribution and core idea
+
+contribution:
+
+1. **efficient** exploration in high dimension observation.
+2. using **random encoders** to get more diversity and computing efficiency.
+
+core idea:
+
+1. random encoders(no gradient computation).
+2. utilize k-nearest neighbor to estimate entropy(approximately).
+
+#### Surprising, difficult and confusing part
+
+surprising:
+
+k-nearest neighbor entropy estimator and random encoders.
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
