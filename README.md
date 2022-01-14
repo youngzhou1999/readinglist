@@ -491,7 +491,7 @@ contribution: use Information Bottleneck to distill task-specific novelty of sta
 
 core idea:
 
-![image-20220114113055865](README.assets/image-20220114113055865.png)
+![image-20220114113055865](README.assets/cb_pipeline.png)
 
 optimize variational bound. 
 
@@ -543,8 +543,12 @@ contribution:
 
 core idea:
 
+![image-20220115010022288](README.assets/re3_pipeline.png)
+
 1. random encoders(no gradient computation).
 2. utilize k-nearest neighbor to estimate entropy(approximately).
+
+![image-20220115010115106](README.assets/re3_ir.png)
 
 #### Surprising, difficult and confusing part
 
@@ -552,9 +556,26 @@ surprising:
 
 k-nearest neighbor entropy estimator and random encoders.
 
+why random encoders(the intuition behind): representation of random encoder effectively captures information about similarity between states.
+
 #### Experiments and baselines
 
+exps: many abiliation exps. taansks in deepmind control suite and mingrid benchmark.
+
+baselines: DrQ, RAD, Dreamer. 
+
 #### How to apply and anywhere
+
+how: I want to use re3 with dreamer in carla(mostly dreamer).
+
+anywhere:
+
+1. random encoder: many paper but this is interesting for suing entropy as exploration(usually in prediction based exploration).
+2. k-nearest neighbor: many papers illustrated in this paper(let to be further reading).
+
+#### Anything to further read
+
+
 
 [BACK TO LIST](#exploration)
 
