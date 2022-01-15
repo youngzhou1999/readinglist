@@ -546,13 +546,13 @@ core idea:
 ![image-20220115010022288](README.assets/re3_pipeline.png)
 
 1. random encoders(no gradient computation).
-2. utilize k-nearest neighbor to estimate entropy(approximately).
+2. utilize k-nearest neighbors to estimate entropy(approximately).
 
 ![image-20220115010115106](README.assets/re3_ir.png)
 
 #### Surprising, difficult and confusing part
 
-surprising: k-nearest neighbor entropy estimator and random encoders.
+surprising: k-nearest neighbors entropy estimator and random encoders.
 
 why random encoders(the intuition behind): representation of random encoder effectively captures information about similarity between states.
 
@@ -569,11 +569,17 @@ how: I want to use re3 with dreamer in carla(mostly dreamer).
 anywhere:
 
 1. random encoder: many papers but this is interesting for suing entropy as exploration(usually in prediction based exploration).
-2. k-nearest neighbor: many papers illustrated in this paper(let it be further reading).
+2. k-nearest neighbors: many papers illustrated in this paper(let it be further reading).
 
 #### Anything to further read
 
+k-nearest neighbors: Mutti(2021). Tao(2020). Badia(2020). Liu & Abbeel(2021). Srinivas(2020).
 
+maximize the entropy of the action space: Harrnoja(2018).
+
+random encoders for generalization: Lee(2020).
+
+Algorithms: DrQ(2021), RAD(2020).
 
 [BACK TO LIST](#exploration)
 
