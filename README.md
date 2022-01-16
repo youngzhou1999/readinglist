@@ -29,6 +29,8 @@
 
 [State Entropy Maximization with Random Encoders for Efficient Exploration{2102}](#re3-random-encoders-for-efficient-exploration):fire::+1:
 
+[Visual Reinforcement Learning with Imagined Goals{1807}](#imagined-goals)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -580,6 +582,48 @@ maximize the entropy of the action space: Harrnoja(2018).
 random encoders for generalization: Lee(2020).
 
 Algorithms: DrQ(2021), RAD(2020).
+
+[BACK TO LIST](#exploration)
+
+### Imagined Goals
+
+### [Visual Reinforcement Learning with Imagined Goals{1807}](https://arxiv.org/abs/1807.04742)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. propose a pipeline: train agent to achieve some imagined goals(states) to fast adapt downstream target goals by self-driven exploration.
+2. goal relabeling to improve sample efficiency.
+
+core idea:
+
+1. pretrain VAE.
+2. utilize a prior distribution as a goal.
+3. intrinsic reward r is defined as latent space.
+
+![image-20220116160737249](README.assets/imagined_goals_ir.png)
+
+1. goal state as information when test(goal conditioned policy). 
+
+![image-20220116160855580](README.assets/imagined_goals_pipeline.png)
+
+#### Surprising, difficult and confusing part
+
+surprising:
+
+1. goal relabeling to expand sample(same data like (s,a) with different goals).
+2. pretrained VAE will be finetuned every K  episodes.
+
+#### Experiments and baselines
+
+not carefully read.
+
+baseline: HER, DSAE.
+
+#### How to apply and anywhere
+
+how: learn skill for pretrain.
 
 [BACK TO LIST](#exploration)
 
