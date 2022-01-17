@@ -31,6 +31,8 @@
 
 [Visual Reinforcement Learning with Imagined Goals{1807}](#imagined-goals)
 
+[Skew-Fit: State-Covering Self-Supervised Reinforcement Learning{1903}](#skew-fit)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -624,6 +626,40 @@ baseline: HER, DSAE.
 #### How to apply and anywhere
 
 how: learn skill for pretrain.
+
+[BACK TO LIST](#exploration)
+
+### Skew-Fit
+
+### [Skew-Fit: State-Covering Self-Supervised Reinforcement Learning{1903}](https://arxiv.org/abs/1903.03698)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. define the formal exploration objective for goal-policy.
+2. propose an algo to max entropy of a goal distribution with entropy monotonously increase.
+
+core idea: max H(S) - H(S|G) -> max H(G) - H(G|S) 
+
+#### Surprising, difficult and confusing part
+
+surprising: using SIR(sampling importance resampling) which is from 1988.
+
+diff: math proof(not carefully read)
+
+#### Experiments and baselines
+
+baselines: HER, rank-based policy, autogoal GAN, GAN {bala}, #-exploration.
+
+exps are good. 
+
+#### How to apply and anywhere
+
+how:
+
+1. method: assume new -> change new -> ignore new
+2. U(s) can be replaced expert prior.
 
 [BACK TO LIST](#exploration)
 
