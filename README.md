@@ -642,6 +642,26 @@ contribution:
 
 core idea: max H(S) - H(S|G) -> max H(G) - H(G|S) 
 
+max H(G) means diverse goals, min H(G|S) means reach goal fast(determinant).
+
+How to optimize:  
+
+1. max H(G)
+
+![image-20220118123005061](README.assets/skewfit_h(g).png)
+
+Then introduce SIR(sampling importance resampling) to reduce variance.
+
+![image-20220118123343613](README.assets/skewfit_sir.png)
+
+2. max -H(G|S) -> max its lower bound and train a policy to maximize the reward(MLE).
+
+![image-20220118123446950](README.assets/skewfit_lb.png)
+
+3. overall algo
+
+![image-20220118123617215](README.assets/skewfit_algo.png)
+
 #### Surprising, difficult and confusing part
 
 surprising: using SIR(sampling importance resampling) which is from 1988.
