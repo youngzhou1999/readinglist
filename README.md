@@ -33,7 +33,7 @@
 
 [Skew-Fit: State-Covering Self-Supervised Reinforcement Learning{1903}](#skew-fit)
 
-[Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning{2008}](#dynamic-generalization-via-information-bottleneck)
+[Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning{2008}](#dynamics-generalization-via-information-bottleneck)
 
 ### VIME
 
