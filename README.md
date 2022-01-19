@@ -33,6 +33,8 @@
 
 [Skew-Fit: State-Covering Self-Supervised Reinforcement Learning{1903}](#skew-fit)
 
+[Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning{2008}](#dynamic-generalization-via-information-bottleneck)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -680,6 +682,47 @@ how:
 
 1. method: assume new -> change new -> ignore new
 2. U(s) can be replaced expert prior.
+
+[BACK TO LIST](#exploration)
+
+### Dynamics Generalization via Information Bottleneck
+
+### [Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning{2008}](https://arxiv.org/abs/2008.00614)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. using IB as an regularization for exploration and generalization.
+2. propose annealing scheme: add noise to encoder to get ability of generalization.
+
+core idea:
+
+![image-20220119232331825](README.assets/dg_pipeline.png)
+
+1. optimization: variantional p -> q(0, I)
+
+![image-20220119232522922](README.assets/dg_opt.png)
+
+2. Annealing schema: increasing β
+
+![image-20220119232653656](README.assets/dg_beta.png)
+
+#### Surprising, difficult and confusing part
+
+surprisng: IB -> KL as regularization for generalization.
+
+#### Experiments and baselines
+
+no explicit baseline, the exps are focusing about generilization.
+
+exps are done by chaging env's parameters.
+
+#### How to apply and anywhere
+
+apply in AD(which the author thinks so).
+
+I think this paper's idea is very similar to INFOBot. 
 
 [BACK TO LIST](#exploration)
 
