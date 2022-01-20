@@ -35,6 +35,10 @@
 
 [Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning{2008}](#dynamics-generalization-via-information-bottleneck)
 
+## Visual-Language Navigation
+
+[]()
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -723,6 +727,22 @@ exps are done by chaging env's parameters.
 apply in AD(which the author thinks so).
 
 I think this paper's idea is very similar to INFOBot. 
+
+[BACK TO LIST](#exploration)
+
+
+
+### 
+
+### []()
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
