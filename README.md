@@ -37,7 +37,7 @@
 
 ## Visual-Language Navigation
 
-[]()
+[REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](#reverie)
 
 ### VIME
 
@@ -732,19 +732,62 @@ I think this paper's idea is very similar to INFOBot.
 
 
 
-### 
 
-### []()
+
+
+
+
+
+### REVERIE
+
+### [REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](https://arxiv.org/abs/1904.10151)
 
 #### Main contribution and core idea
 
+contribution: 
+
+1. propose a dataset of varied and complex robot tasks.
+2. Propose a novel Interactive Navigator-Pointer model as baseline.
+
+core idea of baseline model:  combine SoTA pointer and navigator with an interactive manner to make more accurate action prediction.
+
+![image-20220121004934248](README.assets/reverie.png)
+
+SoTA Nvigator: FAST-short(FAST: sequence-to-sequence model with attention and backtracking).
+
+SoTA Pointer: MAttNet.
+
+proposed interactive manner: 1. encode top 3 object's labels(BiLstm). 2. encode object region information(Resnet FC7 layer).
+
 #### Surprising, difficult and confusing part
+
+None. I think this direction is more desirable in coding with neural network design and training.
 
 #### Experiments and baselines
 
+baselines: 
+
+base: 
+
+1. Random
+2. Shortest
+3. R2R-TF and R2R-SF(lstm with  attention)
+
+SoTA:
+
+1. SelfMonitor(didn't read clearly)
+2. RCM(rl-based algo)
+3. FAST-short and FAST-Lan-only(FAST-short + language only)
+
+![image-20220121010344160](README.assets/reverie_exps.png)
+
 #### How to apply and anywhere
 
-[BACK TO LIST](#exploration)
+This task is worth doing(maybe). Because there is still a huge gap between human.
 
+However, the SoTA algos nowadays is way to large with many vision-language pretrain.
 
+#### [slides](https://youngzhou1999.github.io/pdfs/20220121.pdf)
+
+[BACK TO LIST](#visual-language-navigation)
 
