@@ -39,6 +39,8 @@
 
 [REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](#reverie)
 
+[REVERIE 2021 Winner](#reverie-2021-winner)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -790,4 +792,50 @@ However, the SoTA algos nowadays is way to large with many vision-language pretr
 #### [slides](https://youngzhou1999.github.io/pdfs/20220121.pdf)
 
 [BACK TO LIST](#visual-language-navigation)
+
+### REVERIE 2021 Winner
+
+### [REVERIE 2021 Winner](https://github.com/YuankaiQi/REVERIE_Challenge/blob/master/2021-Winner-Tech-Report.pdf)
+
+#### Main contribution and core idea
+
+contribution: get SoTA performance on REVERIE challenge 2021(by using transformer-based model).
+
+core idea: 
+
+1. transformer model for cross modal information.
+2. building a graphical map to do efficient planing.
+3. disentangle the overall decision(stop policy and navigation policy both with cross-modal attention).
+
+**hand-written model pipeline can be seen in slides below.**
+
+#### Surprising, difficult and confusing part
+
+difficult: not very familiar with transformer training and multi-modal attention.
+
+#### Experiments and baselines
+
+baselines(**need further reading**): 
+
+1. SIA
+2. Rec
+3. Airbert
+
+![image-20220122233324835](README.assets/reverie21_exps.png)
+
+#### How to apply and anywhere
+
+based on its model, we can change the navigation policy.
+
+#### Anything further to read
+
+baselines: SIA: CVPR21. Rec: CVPR21. Airbert: ICCV21.
+
+cross-modal attention: LXMERT: arXiv19. 
+
+#### [slides](https://youngzhou1999.github.io/pdfs/20220121.pdf)
+
+[BACK TO LIST](#visual-language-navigation)
+
+
 
