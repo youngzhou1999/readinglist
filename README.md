@@ -833,7 +833,7 @@ However, the SoTA algos nowadays is way to large with many vision-language pretr
 
 #### [slides](https://youngzhou1999.github.io/pdfs/20220121.pdf)
 
-[BACK TO LIST](#visual-language-navigation)
+[BACK TO LIST](#vln)
 
 ### REVERIE 2021 Winner
 
@@ -877,7 +877,7 @@ cross-modal attention: LXMERT: arXiv19.
 
 #### [slides](https://youngzhou1999.github.io/pdfs/20220121.pdf)
 
-[BACK TO LIST](#visual-language-navigation)
+[BACK TO LIST](#vln)
 
 
 
