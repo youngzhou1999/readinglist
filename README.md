@@ -1,5 +1,11 @@
 # readinglist
 
+## [Exploration](#exploration)
+
+## [Visual-Language Navigation](#visual-language-navigation)
+
+
+
 ## Exploration
 [VIME: Variational Information Maximizing Exploration{1605}](#vime):+1:
 
@@ -795,7 +801,7 @@ However, the SoTA algos nowadays is way to large with many vision-language pretr
 
 ### REVERIE 2021 Winner
 
-### [REVERIE 2021 Winner](https://github.com/YuankaiQi/REVERIE_Challenge/blob/master/2021-Winner-Tech-Report.pdf)
+### [REVERIE 2021 Winner](https://github.com/YuankaiQi/REVERIE_Challenge/blob/master/2021-Winner-Tech-Report.pdf)
 
 #### Main contribution and core idea
 
