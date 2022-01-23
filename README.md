@@ -1,8 +1,10 @@
 # readinglist
 
-## [Exploration](#exploration)
+[Exploration in RL](#exploration)
 
-## [Visual-Language Navigation](#visual-language-navigation)
+[Visual-Language Navigation](#vln)
+
+
 
 
 
@@ -41,7 +43,7 @@
 
 [Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning{2008}](#dynamics-generalization-via-information-bottleneck)
 
-## Visual-Language Navigation
+## VLN
 
 [REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](#reverie)
 
