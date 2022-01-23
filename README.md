@@ -43,6 +43,8 @@
 
 [Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning{2008}](#dynamics-generalization-via-information-bottleneck)
 
+[InfoBot: Transfer and Exploration via the Information Bottleneck{1901}](#infobot):fire::+1:
+
 ## VLN
 
 [REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](#reverie)
@@ -737,6 +739,38 @@ exps are done by chaging env's parameters.
 apply in AD(which the author thinks so).
 
 I think this paper's idea is very similar to INFOBot. 
+
+[BACK TO LIST](#exploration)
+
+### InfoBot
+
+### [InfoBot: Transfer and Exploration via the Information Bottleneck{1901}](https://arxiv.org/abs/1901.10902)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. using IB between the agent's goal and policy to achieve better policy transfer across tasks.
+
+2. building an intrinsic reward(MI) to encourage exploration.  
+
+![image-20220123232304301](README.assets/infobot_contri.png)
+
+core idea: IB as a regularization when optimize goal-conditional policy.
+
+![image-20220123232659671](README.assets/infobot_opt.png)
+
+#### Surprising, difficult and confusing part
+
+
+
+#### Experiments and baselines
+
+
+
+#### How to apply and anywhere
+
+vln goal-conditional policy.
 
 [BACK TO LIST](#exploration)
 
