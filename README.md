@@ -756,21 +756,55 @@ contribution:
 
 ![image-20220123232304301](README.assets/infobot_contri.png)
 
-core idea: IB as a regularization when optimize goal-conditional policy.
+core idea: 
+
+1. IB as a regularization when optimize goal-conditional policy.
 
 ![image-20220123232659671](README.assets/infobot_opt.png)
 
+2. building a exploration bonus to do transfer.
+
+![image-20220124150535046](README.assets/infobot_algo.png)
+
 #### Surprising, difficult and confusing part
 
+surprising: using train env set and test env set to show transfer ability.
 
+confusing: **how to introduce a training env set?** the paper samples task(if in carla, the the train route is the traning set). 
+
+and it's trained on minigrid, I need to check the code especially obs input.
+
+difficult: the derivation of the gradient of the objective J(θ).
 
 #### Experiments and baselines
 
+exps are two main parts: 
 
+1. direct policy transfer
+
+in minigrid, train on one env, evaluate on an new env.
+
+baseline: a2c, infobot-no KL. infobot's performance good.
+
+2. transferable exploration strategy
+
+minigrid, trained on easier env, and transfer to harder env.
+
+baselines: a2c, vime, count-based, curiosity-based(ICM)
+
+infobot transfers well.
 
 #### How to apply and anywhere
 
 vln goal-conditional policy.
+
+carla transfer routes.
+
+#### Anything to further read
+
+derivation: score function setimator(williams,1992; Sutton,1999). Strouse18.
+
+cognitive science: miller and cohen2001.
 
 [BACK TO LIST](#exploration)
 
