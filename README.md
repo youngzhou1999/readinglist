@@ -923,7 +923,7 @@ cross-modal attention: LXMERT: arXiv19.
 
 contribution:
 
-1. propose a new framework (two stage training): **scene grounding task** and **object grounding task** which are both pretrain task
+1. propose a new framework (two stage training): **scene grounding task** and **object grounding task** which are both pretrain task
 2. memory-augmented attentive action decoder
 
 core idea: using two pretrain tasks to help agent understand where to go and what to do
@@ -946,5 +946,5 @@ difficult: need to get familiar with vilbert.
 
 the task of object grounding was used in 2021 winner.
 
-[BACK TO LIST](
+[BACK TO LIST](#vln)
 
