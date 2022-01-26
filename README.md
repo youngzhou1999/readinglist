@@ -51,6 +51,8 @@
 
 [REVERIE 2021 Winner](#reverie-2021-winner)
 
+[Scene-Intuitive Agent for Remote Embodied Visual Grounding{2103}](#scene-intuitive-agent)
+
 ### VIME
 
 ### [VIME: Variational Information Maximizing Exploration{1605}](https://arxiv.org/abs/1605.09674)
@@ -913,5 +915,36 @@ cross-modal attention: LXMERT: arXiv19.
 
 [BACK TO LIST](#vln)
 
+### Scene-Intuitive Agent
 
+### [Scene-Intuitive Agent for Remote Embodied Visual Grounding{2103}](https://arxiv.org/abs/2103.12944)
+
+#### Main contribution and core idea
+
+contribution:
+
+1. propose a new framework (two stage training): **scene grounding task** and **object grounding task** which are both pretrain task
+2. memory-augmented attentive action decoder
+
+core idea: using two pretrain tasks to help agent understand where to go and what to do
+
+![image-20220126222724067](README.assets/scene_intuitive_tasks.png)
+
+scene grounding task: get alignment score between one instruction and five viewpoint(find the most suitable).
+
+object grounding task: given a pair of instruction and bounding boxs, find the best box.
+
+#### Surprising, difficult and confusing part
+
+difficult: need to get familiar with vilbert.
+
+#### Experiments and baselines
+
+![image-20220126224034153](README.assets/scene_intuitive_exps.png)
+
+#### How to apply and anywhere
+
+the task of object grounding was used in 2021 winner.
+
+[BACK TO LIST](
 
