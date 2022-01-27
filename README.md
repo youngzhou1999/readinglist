@@ -4,6 +4,8 @@
 
 [Visual-Language Navigation](#vln)
 
+[Others](#others)
+
 
 
 
@@ -52,6 +54,10 @@
 [REVERIE 2021 Winner](#reverie-2021-winner)
 
 [Scene-Intuitive Agent for Remote Embodied Visual Grounding{2103}](#scene-intuitive-agent)
+
+## Others
+
+[System crash as dynamics of complex networks{PNAS16}](#system-crash-as-dynamics-of-complex-networks)
 
 ### VIME
 
@@ -947,4 +953,46 @@ difficult: need to get familiar with vilbert.
 the task of object grounding was used in 2021 winner.
 
 [BACK TO LIST](#vln)
+
+
+
+### System crash as dynamics of complex networks
+
+### [System crash as dynamics of complex networks{PNAS16}](https://www.pnas.org/content/pnas/113/42/11726.full.pdf)
+
+#### Main contribution and core idea
+
+contri: propose a network-based system dynamics model, where individual actions based on the local information accessible in their respective system structures may lead to **peculiar** dynamics of system crash mentioned above.
+
+core idea: KQ cascade model with parameters k_s and q.
+
+k: a node with less than k neighbors will leave the network(value/risk assessment).
+
+q: a node will leave the network when portion q of its neighbors have left the network(counting-based **copying** action).
+
+![image-20220127232431577](README.assets/crash_as_dynamics.png)
+
+#### Surprising, difficult and confusing part
+
+not very familiar with the exps setting and results.
+
+#### Experiments and baselines
+
+no baselines just simulation.
+
+exps: a pseudo-steady state and sudden crash phenomenon could be steadily observed in certain range of parameters and be easily explained. Further, the resilience of some real-life networks has been evaluated, and a possible explanation for the sudden crash of Friendster has been presented.
+
+#### How to apply and anywhere
+
+the idea of individual and herd behavior can be a possible method to do other decision intelligence project.
+
+future research in paper:
+
+1. research areas dynamics
+2. collective intelligence systems
+3. decentralized adoptions of new technologies.
+
+[BACK TO LIST](#others)
+
+
 
