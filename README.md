@@ -47,6 +47,8 @@
 
 [InfoBot: Transfer and Exploration via the Information Bottleneck{1901}](#infobot):fire::+1:
 
+[Model-Based Active Exploration{1810}](#model-based-active-exploration)
+
 ## VLN
 
 [REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](#reverie)
@@ -813,6 +815,20 @@ carla transfer routes.
 derivation: score function setimator(williams,1992; Sutton,1999). Strouse18.
 
 cognitive science: miller and cohen2001.
+
+[BACK TO LIST](#exploration)
+
+### Model-Based Active Exploration
+
+### [Model-Based Active Exploration{1810}](https://arxiv.org/abs/1810.12162)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
