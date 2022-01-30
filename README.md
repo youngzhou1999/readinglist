@@ -47,11 +47,11 @@
 
 [InfoBot: Transfer and Exploration via the Information Bottleneck{1901}](#infobot):fire::+1:
 
-[Model-Based Active Exploration{1810}](#model-based-active-exploration)
+[Model-Based Active Exploration{1810}](#model-based-active-exploration)::+1::boom:
 
 ## VLN
 
-[REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](#reverie)
+[REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](#reverie):wrench:
 
 [REVERIE 2021 Winner](#reverie-2021-winner)
 
@@ -824,11 +824,49 @@ cognitive science: miller and cohen2001.
 
 #### Main contribution and core idea
 
+contribution: 
+
+1. use ensemble of forward models to observe novelty.
+
+how  to measure novelty: derived from a bayesian prospective->estimate by disaggrenment.
+
+2. propose task-agnostic models(reactive -> active).
+
+core idea: using bayesian derivation to defien a U(s,a) function, than estimate it via disagreement.
+
+measure novelty: Infomation gain with transition function.
+
+ ![image-20220130233354124](README.assets/max_derivation.png)
+
+![image-20220130233422901](README.assets/max_approx.png)
+
 #### Surprising, difficult and confusing part
+
+surprising: 
+
+1. pure exploration setting.
+2. using transitions(model-based) to formulate the IG.
+
+difficult: derivation.
 
 #### Experiments and baselines
 
+baselines: 
+
+1. exploration bonus dqn and bootstrapped dqn(all reactive).
+2. ablation: traj vairance, JRD, Predicion error(pathak 17).
+
+envs: ant maze, chain env, half cheetah. performance good.
+
 #### How to apply and anywhere
+
+bayesian derivation of IG in MBRL setting.
+
+anywhere: pathak 19(disagreement).
+
+#### Anything further to read
+
+Itti & baldi 09 surprise and human attention.
 
 [BACK TO LIST](#exploration)
 
