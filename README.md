@@ -49,6 +49,8 @@
 
 [Model-Based Active Exploration{1810}](#model-based-active-exploration)::+1::boom:
 
+[Planning to Explore via Self-Supervised World Models{2005}](#plan-to-explore)
+
 ## VLN
 
 [REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](#reverie):wrench:
@@ -867,6 +869,42 @@ anywhere: pathak 19(disagreement).
 #### Anything further to read
 
 Itti & baldi 09 surprise and human attention.
+
+[BACK TO LIST](#exploration)
+
+### Plan to Explore 
+
+### [Planning to Explore via Self-Supervised World Models{2005}](https://arxiv.org/abs/2005.05960)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. **planning to seek out expected future novelty**
+2.  **model learning-task agnostic exploration**
+
+core idea:  combine dreamer and disagreement, **but** with novelty:
+
+1. **plan to get essemble**(fake trajs).
+2. adaption: good performance in zero/few shot setting.
+
+![image-20220207224158325](README.assets/plan2explore_pipeline.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: model learning based on planning.
+
+difficult: the idea of combination and own novelty.
+
+#### Experiments and baselines
+
+continues setting with **strong baselines**: dreamer(as std), curiosity, MAX, Retrospectvie(pathak 19).
+
+#### How to apply and anywhere
+
+using latent fake disagreement to get world medel and fast adaption.
+
+![image-20220207224912932](README.assets/plan2explore_overview.png)
 
 [BACK TO LIST](#exploration)
 
