@@ -2,6 +2,8 @@
 
 [Exploration in RL](#exploration)
 
+[Model-based Learning in Autonomous Driving](#mb-ad)
+
 [Visual-Language Navigation](#vln)
 
 [Others](#others)
@@ -50,6 +52,10 @@
 [Model-Based Active Exploration{1810}](#model-based-active-exploration)::+1::boom:
 
 [Planning to Explore via Self-Supervised World Models{2005}](#plan-to-explore)
+
+## Mb-AD
+[Learning to drive from a world on rails{2105}](#world-on-rails)
+
 
 ## VLN
 
@@ -1045,6 +1051,28 @@ difficult: need to get familiar with vilbert.
 the task of object grounding was used in 2021 winner.
 
 [BACK TO LIST](#vln)
+
+
+
+
+
+### World on Rails
+
+### [Learning to drive from a world on rails{2105}](https://arxiv.org/abs/2105.00636)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
+
+[BACK TO LIST](#mb-ad)
+
+
+
+
 
 
 
