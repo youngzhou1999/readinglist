@@ -1062,11 +1062,36 @@ the task of object grounding was used in 2021 winner.
 
 #### Main contribution and core idea
 
+contribution: propose a new method/framework to use RL in AD(carla).
+
+core idea: using env as **"world on rails"** which is to freeze env(static env) and get a ego-model. Then, trainn a tabular-based mb-V-RL to learn policy. Finally, using RL signal as strong supervision to supervise a single RGB policy.
+
+![image-20220209160951615](README.assets/wor_pipeline.png) 
+
+algo pipeline:
+
+![image-20220209161142474](README.assets/wor_algo.png)
+
 #### Surprising, difficult and confusing part
+
+surprising: the idea of using static data to train RL agent.
 
 #### Experiments and baselines
 
+1. carla leaderboard: baselines: lbc, cilrs, transfuser, ia. Performance SOTA.
+2. nocrash: lbc, ia. SOTA.
+3. ablation: with model-based RL algos and MPC algos. Dreamer and CEM. CEM is good, Dreamer doesn't work. 
+
 #### How to apply and anywhere
+
+1. IB for dynamic
+2. on the fly bc penalty.
+
+#### Anything to further reading
+
+[22] Uncertainty-driven imagination for continuous deep reinforcement learning. CoRL‘17.
+
+[29] (CEM) The cross entropy method for fast policy search. ICML'03.
 
 [BACK TO LIST](#mb-ad)
 
