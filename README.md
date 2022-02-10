@@ -56,6 +56,8 @@
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails)
 
+[Uncertainty-driven imagination for continuous deep reinforcement learning{corl17}](#uncertainty-driven-imagination)
+
 
 ## VLN
 
@@ -1092,6 +1094,20 @@ surprising: the idea of using static data to train RL agent.
 [22] Uncertainty-driven imagination for continuous deep reinforcement learning. CoRL‘17.
 
 [29] (CEM) The cross entropy method for fast policy search. ICML'03.
+
+[BACK TO LIST](#mb-ad)
+
+### uncertainty-driven imagination
+
+### []()
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#mb-ad)
 
