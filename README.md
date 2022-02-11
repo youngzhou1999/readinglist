@@ -1099,15 +1099,37 @@ surprising: the idea of using static data to train RL agent.
 
 ### uncertainty-driven imagination
 
-### []()
+### [Uncertainty-driven Imagination for Continuous Deep Reinforcement Learning{corl17}](http://proceedings.mlr.press/v78/kalweit17a/kalweit17a.pdf)
 
 #### Main contribution and core idea
 
+contribution: using a notation of uncertainty to counteract adverse effects of imaginary rollouts with an inaccurate model.
+
+core idea:
+
+1. model do imaginary rollouts for much smaller demand of real-world transitions.
+
+![image-20220211234842060](README.assets/image-20220211234842060.png)
+
+2. bootstrapped critic **as limit imagine data usage for high uncertainty**.
+
+![image-20220211235108767](README.assets/image-20220211235108767.png)
+
+algo:
+
+![image-20220211235259053](README.assets/image-20220211235259053.png)
+
 #### Surprising, difficult and confusing part
+
+confusing: the limit definition.
 
 #### Experiments and baselines
 
+mujico. exps are ok.
+
 #### How to apply and anywhere
+
+uncertainty can be used. 
 
 [BACK TO LIST](#mb-ad)
 
