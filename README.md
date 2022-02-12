@@ -58,6 +58,8 @@
 
 [Uncertainty-driven imagination for continuous deep reinforcement learning{corl17}](#uncertainty-driven-imagination)
 
+[The Cross Entropy method for Fast Policy Search{icml03}](#cross-entropy-policy-search)
+
 
 ## VLN
 
@@ -1109,15 +1111,15 @@ core idea:
 
 1. model do imaginary rollouts for much smaller demand of real-world transitions.
 
-![image-20220211234842060](README.assets/image-20220211234842060.png)
+![image-20220211234842060](README.assets/ma-bddpg_model.png)
 
 2. bootstrapped critic **as limit imagine data usage for high uncertainty**.
 
-![image-20220211235108767](README.assets/image-20220211235108767.png)
+![image-20220211235108767](README.assets/ma-bddpg_uncertainty.png)
 
 algo:
 
-![image-20220211235259053](README.assets/image-20220211235259053.png)
+![image-20220211235259053](README.assets/ma-bddpg_algo.png)
 
 #### Surprising, difficult and confusing part
 
@@ -1133,9 +1135,35 @@ uncertainty can be used.
 
 [BACK TO LIST](#mb-ad)
 
+### Cross-entropy Policy Search
 
+### [The Cross Entropy method for Fast Policy Search{icml03}](https://www.aaai.org/Papers/ICML/2003/ICML03-068.pdf)
 
+#### Main contribution and core idea
 
+contribution: present a learning framework for mdp based on policy optimization.
+
+core idea: using cross entropy method.
+
+![image-20220212230748898](README.assets/bcpo_pipeline.png)
+
+![image-20220212230804040](README.assets/bcpo_algo.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: this is paper is the algo that introduced in Professor Zhou's lecture which is a useful algo in **not differentiable score function**. See below.
+
+![image-20220212230922317](README.assets/bcpo_intro_rl.png)
+
+#### Experiments and baselines
+
+gird world and inventory Control Problem to show it's work.
+
+#### How to apply and anywhere
+
+useful in not differentiable setting. **can be considered to use when puzzle**.
+
+[BACK TO LIST](#mb-ad)
 
 
 
