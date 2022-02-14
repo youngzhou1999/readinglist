@@ -69,6 +69,8 @@
 
 [Scene-Intuitive Agent for Remote Embodied Visual Grounding{2103}](#scene-intuitive-agent)
 
+[UMBRELLA_ Uncertainty-Aware Model-Based Offline Reinforcement Learning Leveraging Planning{nips21workshop}](#umbrella)
+
 ## Others
 
 [System crash as dynamics of complex networks{PNAS16}](#system-crash-as-dynamics-of-complex-networks)
@@ -1164,6 +1166,22 @@ gird world and inventory Control Problem to show it's work.
 useful in not differentiable setting. **can be considered to use when puzzle**.
 
 [BACK TO LIST](#mb-ad)
+
+### UMBRELLA
+
+### [UMBRELLA_ Uncertainty-Aware Model-Based Offline Reinforcement Learning Leveraging Planning{nips21workshop}]()
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
+
+[BACK TO LIST](#mb-ad)
+
+
 
 
 
