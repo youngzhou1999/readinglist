@@ -1173,11 +1173,50 @@ useful in not differentiable setting. **can be considered to use when puzzle**.
 
 #### Main contribution and core idea
 
+contribution: 
+
+1. use mb-offline setting to address: explainability and transferability.
+
+2. an interpretable learning-based fashion in AD(**capture both epistemic and aleatoric uncertainty **).
+
+core idea:
+
+1. use model to learn a **stochastic** dynamics model, a BC policy and a truncated value function.
+
+![image-20220215172149017](README.assets/umbrella_loss.png)
+
+2. proposed a planning algo based on mpc to do planing.
+
+![image-20220215172231904](README.assets/umbrella_plan.png)
+
+3. pipeline:
+
+![image-20220215172304828](README.assets/umbrella_pipeline.png)
+
+![image-20220215172326436](README.assets/umbrella_dataflow.png)
+
 #### Surprising, difficult and confusing part
+
+surprising: offline + mb setting is good and stochastic dynamic model.
+
+difficult: not very familiar with those **new** papers(list in further reading).
 
 #### Experiments and baselines
 
+exps are done in expert datasets(NGSIM CARLA). **exps are ok(can be improved I think)**.
+
+baselines: IL, MBOP, MPUR.
+
 #### How to apply and anywhere
+
+mb + offline setting.
+
+#### Anything futher to read
+
+1. model-based offline planning(MBOP)(Aegenson and Dulac-Arnold, 2021)
+2. BADGR(kahn et al, 2021)
+3.  model predictive path integral (MPPI)(Williams et al, 2017)
+4. dynamic model(Henaff et al, 2019)
 
 [BACK TO LIST](#mb-ad)
 
