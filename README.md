@@ -60,6 +60,8 @@
 
 [The Cross Entropy method for Fast Policy Search{icml03}](#cross-entropy-policy-search)
 
+[UMBRELLA_ Uncertainty-Aware Model-Based Offline Reinforcement Learning Leveraging Planning{nips21workshop}](#umbrella)
+
 
 ## VLN
 
@@ -68,8 +70,6 @@
 [REVERIE 2021 Winner](#reverie-2021-winner)
 
 [Scene-Intuitive Agent for Remote Embodied Visual Grounding{2103}](#scene-intuitive-agent)
-
-[UMBRELLA_ Uncertainty-Aware Model-Based Offline Reinforcement Learning Leveraging Planning{nips21workshop}](#umbrella)
 
 ## Others
 
