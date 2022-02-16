@@ -35,7 +35,7 @@
 
 [Large-Scale Study of Curiosity-Driven Learning{1808}](#large-scale-study-of-curiosity-driven-learning)
 
-[Dynamic Bottleneck for Robust Self-Supervised Exploration{2110}](#dynamic-bottleneck):fire::+1:
+[Dynamic Bottleneck for Robust Self-Supervised Exploration{2110}](#dynamic-bottleneck):fire::+1::wrench:
 
 [Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty{ICML19}](#curiosity-bottleneck):fire:
 
@@ -54,13 +54,15 @@
 [Planning to Explore via Self-Supervised World Models{2005}](#plan-to-explore)
 
 ## Mb-AD
-[Learning to drive from a world on rails{2105}](#world-on-rails)
+[Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
 
 [Uncertainty-driven imagination for continuous deep reinforcement learning{corl17}](#uncertainty-driven-imagination)
 
 [The Cross Entropy method for Fast Policy Search{icml03}](#cross-entropy-policy-search)
 
 [UMBRELLA_ Uncertainty-Aware Model-Based Offline Reinforcement Learning Leveraging Planning{nips21workshop}](#umbrella)
+
+[MODEL-BASED OFFLINE PLANNING{2008}](#mbop)
 
 
 ## VLN
@@ -1199,7 +1201,7 @@ core idea:
 
 surprising: offline + mb setting is good and stochastic dynamic model.
 
-difficult: not very familiar with those **new** papers(list in further reading).
+difficult: not very familiar with those **new** papers(list in further reading).
 
 #### Experiments and baselines
 
@@ -1219,6 +1221,41 @@ mb + offline setting.
 4. dynamic model(Henaff et al, 2019)
 
 [BACK TO LIST](#mb-ad)
+
+### MBOP
+
+### [MODEL-BASED OFFLINE PLANNING{2008}](https://arxiv.org/pdf/2008.05556.pdf)
+
+#### Main contribution and core idea
+
+contribution: proposed a algo that can be used to control the system directly through planning which results to **controllable policies directly through data**(no simulator for example).
+
+core idea:
+
+1. standard supervised learning to learn with l2 loss: 1-step dynamic model, BC policy, reward model.
+2. policy based on mpc and PDDM.
+
+![image-20220216152013832](README.assets/mbop_policy.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: although its exps are not that strong, but the idea and contribution offer a **promising** method to solve real system problems.
+
+difficult: there are a lot of new papers that i'm not familiar with.
+
+#### Experiments and baselines
+
+test in dataset d4rl(6 envs in mujoco with different(random, expert) data).
+
+baselines: mopo, mbpo. performance are ok(simlilar to mopo, better than mbpo).
+
+#### How to apply and anywhere
+
+mimic dynamic model and the plan policy are both useful.
+
+[BACK TO LIST](#mb-ad)
+
+
 
 
 
