@@ -64,6 +64,8 @@
 
 [MODEL-BASED OFFLINE PLANNING{2008}](#mbop)
 
+[MOPO: Model-based Offline Policy Optimization{2005}](#mopo)
+
 
 ## VLN
 
@@ -1252,6 +1254,41 @@ baselines: mopo, mbpo. performance are ok(simlilar to mopo, better than mbpo).
 #### How to apply and anywhere
 
 mimic dynamic model and the plan policy are both useful.
+
+[BACK TO LIST](#mb-ad)
+
+### MOPO
+
+### [MOPO: Model-based Offline Policy Optimization{2005}](https://arxiv.org/abs/2005.13239)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. proposed a algo for model-base offline rl.
+2. claim that vanilla mb rl outperforms in the offline setting.
+3. show its algo max  a lower bound of return.
+
+core idea: using rewar penalty to overcome ood data.
+
+1. train an ensemble dynamic model(output a gaussian distribution over the next state and reward) of s' and reward.
+2. reward penaly: using model's variance as penaly.
+
+3. using dynamic model and new reward to any rl algo to get a policy.
+
+#### Surprising, difficult and confusing part
+
+surprising: the author found that mb better than model-free which helps make choice.
+
+difficult: bound derivation(didn't read carefully). 
+
+#### Experiments and baselines
+
+exps are done in d4rl. baselines: bc, mbpo, sac, bear, brac-v.
+
+peformance ok.
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#mb-ad)
 
