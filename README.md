@@ -521,13 +521,13 @@ anywhere: several IB-based exploration paper.
 
 #### Anything to further read
 
-SSL: [18] NIPS20. [46] ICLR21.
+- [] SSL: [18] NIPS20. [46] ICLR21.
 
-Curiosity Bottleneck: [26] ICML19.
+- [x] Curiosity Bottleneck: [26] ICML19.
 
-in AD noise: [34] arXiv 18
+- [] in AD noise: [34] arXiv 18
 
-RE3(enropy-based): [47] ICML 21.
+- [x] RE3(enropy-based): [47] ICML 21.
 
 [BACK TO LIST](#exploration)
 
@@ -623,13 +623,13 @@ anywhere:
 
 #### Anything to further read
 
-k-nearest neighbors: Mutti(2021). Tao(2020). Badia(2020). Liu & Abbeel(2021). Srinivas(2020).
+- [] k-nearest neighbors: Mutti(2021). Tao(2020). Badia(2020). Liu & Abbeel(2021). Srinivas(2020).
 
-maximize the entropy of the action space: Harrnoja(2018).
+- [] maximize the entropy of the action space: Harrnoja(2018).
 
-random encoders for generalization: Lee(2020).
+- [] random encoders for generalization: Lee(2020).
 
-Algorithms: DrQ(2021), RAD(2020).
+- [] Algorithms: DrQ(2021), RAD(2020).
 
 [BACK TO LIST](#exploration)
 
@@ -830,9 +830,9 @@ carla transfer routes.
 
 #### Anything to further read
 
-derivation: score function setimator(williams,1992; Sutton,1999). Strouse18.
+- [] derivation: score function setimator(williams,1992; Sutton,1999). Strouse18.
 
-cognitive science: miller and cohen2001.
+- [] cognitive science: miller and cohen2001.
 
 [BACK TO LIST](#exploration)
 
@@ -884,7 +884,7 @@ anywhere: pathak 19(disagreement).
 
 #### Anything further to read
 
-Itti & baldi 09 surprise and human attention.
+- [] Itti & baldi 09 surprise and human attention.
 
 [BACK TO LIST](#exploration)
 
@@ -1009,9 +1009,11 @@ difficult: not very familiar with transformer training and multi-modal attention
 
 baselines(**need further reading**): 
 
-1. SIA
-2. Rec
-3. Airbert
+- [] SIA
+
+- [] Rec
+
+- [] Airbert
 
 ![image-20220122233324835](README.assets/reverie21_exps.png)
 
@@ -1021,9 +1023,9 @@ based on its model, we can change the navigation policy.
 
 #### Anything further to read
 
-baselines: SIA: CVPR21. Rec: CVPR21. Airbert: ICCV21.
+- [] baselines: SIA: CVPR21. Rec: CVPR21. Airbert: ICCV21.
 
-cross-modal attention: LXMERT: arXiv19. 
+- [] cross-modal attention: LXMERT: arXiv19. 
 
 #### [slides](https://youngzhou1999.github.io/pdfs/20220121.pdf)
 
@@ -1099,9 +1101,9 @@ surprising: the idea of using static data to train RL agent.
 
 #### Anything to further reading
 
-[22] Uncertainty-driven imagination for continuous deep reinforcement learning. CoRL‘17.
+- [x] [22] Uncertainty-driven imagination for continuous deep reinforcement learning. CoRL‘17.
 
-[29] (CEM) The cross entropy method for fast policy search. ICML'03.
+- [x] [29] (CEM) The cross entropy method for fast policy search. ICML'03.
 
 [BACK TO LIST](#mb-ad)
 
@@ -1215,12 +1217,15 @@ baselines: IL, MBOP, MPUR.
 
 mb + offline setting.
 
-#### Anything futher to read
+#### Anything further to read
 
-1. model-based offline planning(MBOP)(Aegenson and Dulac-Arnold, 2021)
-2. BADGR(kahn et al, 2021)
-3.  model predictive path integral (MPPI)(Williams et al, 2017)
-4. dynamic model(Henaff et al, 2019)
+- [x] model-based offline planning(MBOP)(Aegenson and Dulac-Arnold, 2021)
+
+- [] BADGR(kahn et al, 2021)
+
+- [] model predictive path integral (MPPI)(Williams et al, 2017)
+
+- [] dynamic model(Henaff et al, 2019)
 
 [BACK TO LIST](#mb-ad)
 
