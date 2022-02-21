@@ -66,6 +66,8 @@
 
 [MOPO: Model-based Offline Policy Optimization{2005}](#mopo)
 
+[RRL: Resnet as representation for Reinforcement Learning{2107}](#rrl)
+
 
 ## VLN
 
@@ -1293,6 +1295,61 @@ peformance ok.
 #### How to apply and anywhere
 
 [BACK TO LIST](#mb-ad)
+
+### RRL 
+
+### [RRL: Resnet as representation for Reinforcement Learning{2107}](https://arxiv.org/abs/2107.03380)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. a simple yet effective(and general) method to learn behaviors directly from visual inputs(with sensor data).
+2. decouple representation learning from policy learning.
+
+core idea: representations do not necessarily have to be trained on the exact task distribution.
+
+using a pretrained large model for feature encoding.
+
+![image-20220221154315126](README.assets/rrl_idea.png)
+
+#### Surprising, difficult and confusing part
+
+something useful for understanding representation learning:
+
+challenges of learning without env instrumentation(**so need to do representation**): 
+
+1. incomplete info with partial observability.
+2. high dim input space.
+3. sensory info noise and task-irrelevant conditions.
+4. (most importantly) need a large number of samples to understand **task-irrelevant info** before it makes any progress on the true task objective(untangle task-relevant information).
+
+what's a good representation:
+
+1. low dim.
+2. generalization.
+3. robust.
+4. effective for a policy.
+
+#### Experiments and baselines
+
+Adroit manipulation suite (high dim input), baselines: NPG(state), DAPG(state, upper bound) and (FERM).
+
+exps are good.
+
+one interesting exps: done in dmc benchmark to show **representation of some algos are narrow and task specific**.
+
+#### How to apply and anywhere
+
+**general: pre-train model for visual feature**.
+
+#### Anything further to read
+
+- [ ] Hafner et al 2020.
+
+[BACK TO LIST](#mb-ad)
+
+
 
 
 
