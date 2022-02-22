@@ -68,6 +68,8 @@
 
 [RRL: Resnet as representation for Reinforcement Learning{2107}](#rrl)
 
+[BADGR: An Autonomous Self-Supervised Learning-Based Navigation System{2002}](#badgr)
+
 
 ## VLN
 
@@ -1222,7 +1224,7 @@ mb + offline setting.
 #### Anything further to read
 
 - [x] model-based offline planning(MBOP)(Aegenson and Dulac-Arnold, 2021)
-- [ ] BADGR(kahn et al, 2021)
+- [x] BADGR(kahn et al, 2021)
 - [ ] model predictive path integral (MPPI)(Williams et al, 2017)
 - [ ] dynamic model(Henaff et al, 2019)
 
@@ -1346,6 +1348,55 @@ one interesting exps: done in dmc benchmark to show **representation of some alg
 #### Anything further to read
 
 - [ ] Hafner et al 2020.
+
+[BACK TO LIST](#mb-ad)
+
+for mb-ad
+
+### BADGR
+
+### [BADGR: An Autonomous Self-Supervised Learning-Based Navigation System{2002}](https://arxiv.org/pdf/2002.05700.pdf)
+
+#### Main contribution and core idea
+
+contribution: propose a **self-supervised manner** off policy data-driven method for out-door navigation.
+
+core idea:
+
+1. self-supervised: learn from history(trajs) to update event label.
+2. a predict model to learn event label(loss was designed to penalize the distance between the predicted and ground truth events).
+
+![image-20220222195437976](README.assets/badgr_model.png)
+
+3. **hand-craft reward** was designed by people(with collision reward as domination).
+
+4. zeroth order stochastic optimizer and **reward-weighted average**.
+
+![image-20220222195953026](README.assets/badgr_plan.png)
+
+algo:
+
+![image-20220222195653530](README.assets/badgr_algo.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: definition of **event** and use it as predeiction task. 
+
+limit: narrow generation(specific task).
+
+#### Experiments and baselines
+
+exps are designed in real-world robot navigation. baseline: geometir info(LidAR).
+
+exps are good to show the method is good.
+
+#### How to apply and anywhere
+
+planning part can be remembered.
+
+#### Anything further to read
+
+- [ ] [40] zeroth order stochastic optimizer.
 
 [BACK TO LIST](#mb-ad)
 
