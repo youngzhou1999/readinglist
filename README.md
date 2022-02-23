@@ -70,6 +70,8 @@
 
 [BADGR: An Autonomous Self-Supervised Learning-Based Navigation System{2002}](#badgr)
 
+[Deep Dynamics Models for Learning Dexterous Manipulation{1909}](#deep-dynamics-models-for-learning-dexterous-manipulation)
+
 
 ## VLN
 
@@ -1347,7 +1349,7 @@ one interesting exps: done in dmc benchmark to show **representation of some alg
 
 #### Anything further to read
 
-- [ ] Hafner et al 2020.
+- [ ] Hafner et al 2020(this is dreamer).
 
 [BACK TO LIST](#mb-ad)
 
@@ -1396,9 +1398,50 @@ planning part can be remembered.
 
 #### Anything further to read
 
-- [ ] [40] zeroth order stochastic optimizer.
+- [x] [40] zeroth order stochastic optimizer.
 
 [BACK TO LIST](#mb-ad)
+
+### Deep Dynamics Models for Learning Dexterous Manipulation
+
+### [Deep Dynamics Models for Learning Dexterous Manipulation{1909}](https://arxiv.org/pdf/1909.11652.pdf)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. proposed a algo for online planning with dynamics model to effectively learn from data.
+2. poposed improvements with mpc to do zeroth-grad optimization.
+
+core idea: first mimic a dynamic model(**iter with training not offline**) than design a reward function and design a controller.
+
+![image-20220223145744154](README.assets/pddm_algo.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: the design of controller(**Online Planning for Closed-Loop Control**).
+
+1. random shooting
+2. CEM
+3. Filtering and **Reward-Weighted Refinement**(the good and widely used one)s
+
+![image-20220223150011878](README.assets/pddm_controller.png)
+
+#### Experiments and baselines
+
+in manipulation task(mujoco(simulation) and real-world).
+
+baselines: deterministic nn with random shooting, pets(uncertainty-aware), npg, sac(both model-free), mbpo.
+
+exps are good.   
+
+#### How to apply and anywhere
+
+polish online control or planning with label.
+
+[BACK TO LIST](#mb-ad)
+
+
 
 
 
