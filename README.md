@@ -72,6 +72,8 @@
 
 [Deep Dynamics Models for Learning Dexterous Manipulation{1909}](#deep-dynamics-models-for-learning-dexterous-manipulation)
 
+[MODEL-PREDICTIVE POLICY LEARNING WITH UNCERTAINTY REGULARIZATION FOR DRIVING IN DENSE TRAFFIC{1901}](#model-predictive-policy-learning-with-uncertainty-regularization)
+
 
 ## VLN
 
@@ -1228,7 +1230,10 @@ mb + offline setting.
 - [x] model-based offline planning(MBOP)(Aegenson and Dulac-Arnold, 2021)
 - [x] BADGR(kahn et al, 2021)
 - [ ] model predictive path integral (MPPI)(Williams et al, 2017)
-- [ ] dynamic model(Henaff et al, 2019)
+
+**hard to read**: main thoughts is reward re-weighting to optimize each action.
+
+- [x] dynamic model(Henaff et al, 2019)
 
 [BACK TO LIST](#mb-ad)
 
@@ -1349,7 +1354,7 @@ one interesting exps: done in dmc benchmark to show **representation of some alg
 
 #### Anything further to read
 
-- [ ] Hafner et al 2020(this is dreamer).
+- [ ] Hafner et al 2020(this is dreamer actually).
 
 [BACK TO LIST](#mb-ad)
 
@@ -1438,6 +1443,48 @@ exps are good.
 #### How to apply and anywhere
 
 polish online control or planning with label.
+
+[BACK TO LIST](#mb-ad)
+
+### MODEL-PREDICTIVE POLICY LEARNING WITH UNCERTAINTY REGULARIZATION
+
+### [MODEL-PREDICTIVE POLICY LEARNING WITH UNCERTAINTY REGULARIZATION FOR DRIVING IN DENSE TRAFFIC{1901}](https://arxiv.org/pdf/1901.02705.pdf)
+
+#### Main contribution and core idea
+
+contribution: proposed a dynamic model over **multiple time steps** while **explicitly penalizing** policy cost and **uncertainty cost**.
+
+core idea: 
+
+1. action-conditional stochastic forward model.
+
+![image-20220223194446235](README.assets/mpp_dynamic.png)
+
+2. measure uncertainty of dynamics network: dropout
+
+![image-20220223194605376](README.assets/mpp_mix_gaussian.png)
+
+3. uncertainty cost: further calculated by variance
+
+![image-20220223194938215](README.assets/mpp_uncertainty.png)
+
+4. pipeline
+
+![image-20220223194838506](README.assets/mpp_pipeline.png)
+
+#### Surprising, difficult and confusing part
+
+difficult: in mixture gaussian: u ~ B(p_u) **what's p_u?**
+
+#### Experiments and baselines
+
+obs driving dataset.
+
+baselines: forward model with value gradient(15's paper not very clear).
+
+#### How to apply and anywhere
+
+do essemble controller(mpc like).
 
 [BACK TO LIST](#mb-ad)
 
