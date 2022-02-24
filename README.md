@@ -83,6 +83,8 @@
 
 [Scene-Intuitive Agent for Remote Embodied Visual Grounding{2103}](#scene-intuitive-agent)
 
+[A Recurrent Vision-and-Language BERT for Navigation{2011}](#A-recurrent-vision-and-Language-bert-for-navigation)
+
 ## Others
 
 [System crash as dynamics of complex networks{PNAS16}](#system-crash-as-dynamics-of-complex-networks)
@@ -1072,6 +1074,48 @@ the task of object grounding was used in 2021 winner.
 
 [BACK TO LIST](#vln)
 
+### A Recurrent Vision-and-Language BERT for Navigation 
+
+### [A Recurrent Vision-and-Language BERT for Navigation{2011}](https://arxiv.org/abs/2011.13922)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. fix the limitation of vision-and-language bert in navigation.
+2. proposed a v&l **rec** bert for navigation for handling pomdp in navigation(requiring history-dependent attention).
+3. the model can be used as a backbone for generalizing to other transformer archtectures.
+
+core idea: define a state while doing attention(**recurrent function**)
+
+![image-20220224202115726](README.assets/rbert_idea.png)
+
+the model: inied from a pre-trained v$l bert than fintuned on r2r and reverie.
+
+![image-20220224202702654](README.assets/rbert_pipeline.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: one single GPU and has the potential to do other v&l problems along with navigation task.
+
+#### Experiments and baselines
+
+init in OSCAR helps a lot.
+
+![image-20220224203408696](README.assets/rbert_exp.png)
+
+
+
+#### How to apply and anywhere
+
+read the code and it can be used in vln.
+
+[BACK TO LIST](#vln)
+
+
+
+
+
 
 
 
@@ -1387,7 +1431,7 @@ algo:
 
 #### Surprising, difficult and confusing part
 
-surprising: definition of **event** and use it as predeiction task. 
+surprising: definition of **event** and use it as predeiction task. 
 
 limit: narrow generation(specific task).
 
