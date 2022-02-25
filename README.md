@@ -85,6 +85,8 @@
 
 [A Recurrent Vision-and-Language BERT for Navigation{2011}](#A-recurrent-vision-and-Language-bert-for-navigation)
 
+[REVE-CE: Remote Embodied Visual Referring Expression in Continuous Environment{2202}](#reve-ce)
+
 ## Others
 
 [System crash as dynamics of complex networks{PNAS16}](#system-crash-as-dynamics-of-complex-networks)
@@ -1109,6 +1111,38 @@ init in OSCAR helps a lot.
 #### How to apply and anywhere
 
 read the code and it can be used in vln.
+
+[BACK TO LIST](#vln)
+
+### REVE-CE
+
+### [REVE-CE: Remote Embodied Visual Referring Expression in Continuous Environment{2202}](https://ieeexplore.ieee.org/document/9674225)
+
+#### Main contribution and core idea
+
+contribution: propose a vln env with **continuous action space** and a baseline algo.
+
+core idea:
+
+1. three work to do continuous action:
+
+bounding box alignment, way point projection and continuous trajectory generation.
+
+2. algo: rgb+d with multi-branch attention.
+
+![image-20220225193809991](README.assets/reve-ce_model.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: the exps are far low.
+
+#### Experiments and baselines
+
+![image-20220225195300779](README.assets/reve-ce_exp.png)
+
+#### How to apply and anywhere
+
+can be a new setting.
 
 [BACK TO LIST](#vln)
 
