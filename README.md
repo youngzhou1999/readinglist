@@ -87,6 +87,8 @@
 
 [REVE-CE: Remote Embodied Visual Referring Expression in Continuous Environment{2202}](#reve-ce)
 
+[Learning Transferable Visual Models From Natural Language Supervision{2103}](#clip)
+
 ## Others
 
 [System crash as dynamics of complex networks{PNAS16}](#system-crash-as-dynamics-of-complex-networks)
@@ -1143,6 +1145,20 @@ surprising: the exps are far low.
 #### How to apply and anywhere
 
 can be a new setting.
+
+[BACK TO LIST](#vln)
+
+### CLIP
+
+### [Learning Transferable Visual Models From Natural Language Supervision{2103}](https://arxiv.org/abs/2103.00020)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#vln)
 
