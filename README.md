@@ -1037,7 +1037,7 @@ based on its model, we can change the navigation policy.
 
 #### Anything further to read
 
-- [ ] baselines: SIA: CVPR21. Rec: CVPR21. Airbert: ICCV21.
+- [x] baselines: SIA: CVPR21. Rec: CVPR21. Airbert: ICCV21.
 
 - [ ] cross-modal attention: LXMERT: arXiv19. 
 
@@ -1154,11 +1154,21 @@ can be a new setting.
 
 #### Main contribution and core idea
 
+contribution: pretrain good model(rn and vit) in 400m image-text pair using contrastive learning.
+
+core idea: 
+
+![image-20220302233119064](README.assets/clip.png)
+
 #### Surprising, difficult and confusing part
 
 #### Experiments and baselines
 
+**efficient**
+
 #### How to apply and anywhere
+
+reverie
 
 [BACK TO LIST](#vln)
 
