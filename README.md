@@ -89,6 +89,8 @@
 
 [Learning Transferable Visual Models From Natural Language Supervision{2103}](#clip)
 
+[CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification{2103}](#cross-vit)
+
 ## Others
 
 [System crash as dynamics of complex networks{PNAS16}](#system-crash-as-dynamics-of-complex-networks)
@@ -1169,6 +1171,26 @@ core idea:
 #### How to apply and anywhere
 
 reverie
+
+[BACK TO LIST](#vln)
+
+### Cross-Vit
+
+### [CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification{2103}](https://arxiv.org/abs/2103.14899)
+
+#### Main contribution and core idea
+
+contribution: propose a method for multi-scale feature representation in vit.
+
+core idea: dual-arch mini-patch and large-patch with cross-attention for info fusion.
+
+ ![image-20220303231941200](README.assets/crossvit.png)
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#vln)
 
