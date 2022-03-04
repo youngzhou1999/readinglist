@@ -53,6 +53,8 @@
 
 [Planning to Explore via Self-Supervised World Models{2005}](#plan-to-explore)
 
+[DATA-EFFICIENT REINFORCEMENT LEARNING WITH SELF-PREDICTIVE REPRESENTATIONS](#self-predictive-representation)
+
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
 
@@ -937,6 +939,20 @@ continues setting with **strong baselines**: dreamer(as std), curiosity, MAX, Re
 using latent fake disagreement to get world medel and fast adaption.
 
 ![image-20220207224912932](README.assets/plan2explore_overview.png)
+
+[BACK TO LIST](#exploration)
+
+### SELF-PREDICTIVE REPRESENTATIONS
+
+### [DATA-EFFICIENT REINFORCEMENT LEARNING WITH SELF-PREDICTIVE REPRESENTATIONS{2007}](https://arxiv.org/pdf/2007.05929.pdf)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
