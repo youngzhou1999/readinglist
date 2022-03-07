@@ -948,9 +948,33 @@ using latent fake disagreement to get world medel and fast adaption.
 
 #### Main contribution and core idea
 
+contribution: propose a data-efficient method for rl.
+
+core idea: a auxiliary loss term to do self-predictive representation.
+
+ ![image-20220307231703088](README.assets/spr_pipeline.png)
+
+![image-20220307231729715](README.assets/spr_loss.png)
+
 #### Surprising, difficult and confusing part
 
+surprising: 
+
+1. self learning by predict its own latent representations **multiple steps**
+2. **momenta** encoder update(in this paper called exponential moving average)
+3. data aug to improve performance(also no data aug which makes it **efficient**).
+
 #### Experiments and baselines
+
+exps: 26 atari 100k baselines: drq, curl 
+
+performance is rather good.
+
+ ![image-20220307232656780](README.assets/spr_exp.png)
+
+abi study: focus on time step, l2 loss, projection
+
+**this is actually failure in some way but means a lot for final success .**
 
 #### How to apply and anywhere
 
