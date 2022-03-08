@@ -53,7 +53,9 @@
 
 [Planning to Explore via Self-Supervised World Models{2005}](#plan-to-explore)
 
-[DATA-EFFICIENT REINFORCEMENT LEARNING WITH SELF-PREDICTIVE REPRESENTATIONS](#self-predictive-representation)
+[DATA-EFFICIENT REINFORCEMENT LEARNING WITH SELF-PREDICTIVE REPRESENTATIONS{2007}](#self-predictive-representation)
+
+[Task-Agnostic Exploration via Policy Gradient of a Non-Parametric State Entropy Estimate{2007}}](#k-nearest-neighbors-estimate-of-the-state-distribution-entropy)
 
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
@@ -975,6 +977,20 @@ performance is rather good.
 abi study: focus on time step, l2 loss, projection
 
 **this is actually failure in some way but means a lot for final success .**
+
+#### How to apply and anywhere
+
+[BACK TO LIST](#exploration)
+
+### k-nearest neighbors estimate of the state distribution entropy 
+
+### [Task-Agnostic Exploration via Policy Gradient of a Non-Parametric State Entropy Estimate{2007}](https://arxiv.org/pdf/2007.04640.pdf)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
 
 #### How to apply and anywhere
 
