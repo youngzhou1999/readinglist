@@ -95,6 +95,8 @@
 
 [CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification{2103}](#cross-vit)
 
+[Visual-Language Navigation Pretraining via Prompt-based Environmental Self-exploration{2203}](#prompt-and-clip)
+
 ## Others
 
 [System crash as dynamics of complex networks{PNAS16}](#system-crash-as-dynamics-of-complex-networks)
@@ -1241,6 +1243,20 @@ contribution: propose a method for multi-scale feature representation in vit.
 core idea: dual-arch mini-patch and large-patch with cross-attention for info fusion.
 
  ![image-20220303231941200](README.assets/crossvit.png)
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
+
+[BACK TO LIST](#vln)
+
+### prompt and clip in vln
+
+### [Visual-Language Navigation Pretraining via Prompt-based Environmental Self-exploration{2203}](https://arxiv.org/pdf/2203.04006.pdf)
+
+#### Main contribution and core idea
 
 #### Surprising, difficult and confusing part
 
