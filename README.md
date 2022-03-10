@@ -1258,9 +1258,38 @@ core idea: dual-arch mini-patch and large-patch with cross-attention for info fu
 
 #### Main contribution and core idea
 
+contribution: 
+
+1. proposed a data aug method
+2. proposed prompt for fast domain adaptation in vln.
+
+core idea:
+
+1. sample action and object to generate new traj and instruction pair by using templates and clip.
+
+![image-20220310214556702](README.assets/probes_idea.png)
+
+![image-20220310214613922](README.assets/probes_temp.png)
+
+2. prompt 
+
+not very familiar, but its useful according to ablation study.
+
 #### Surprising, difficult and confusing part
 
+surprising: clip as zero-shot and templates for generating new data pairs.
+
 #### Experiments and baselines
+
+exps in reverie and r2r. baselines: vilbert, vlnbert.
+
+![image-20220310215335528](README.assets/probes_exp.png)
+
+ablation study: 
+
+1. task of mask language is useful in r2r. 
+
+2. all with rank loss(useful).
 
 #### How to apply and anywhere
 
