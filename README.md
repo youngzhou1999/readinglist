@@ -79,6 +79,8 @@
 [MODEL-PREDICTIVE POLICY LEARNING WITH UNCERTAINTY REGULARIZATION FOR DRIVING IN DENSE TRAFFIC{1901}](#model-predictive-policy-learning-with-uncertainty-regularization)
 
 
+
+
 ## VLN
 
 [REVERIE: Remote Embodied Visual Referring Expression in Real Indoor Environments{1904}](#reverie):wrench:
@@ -1712,6 +1714,20 @@ baselines: forward model with value gradient(15's paper not very clear).
 #### How to apply and anywhere
 
 do essemble controller(mpc like).
+
+[BACK TO LIST](#mb-ad)
+
+### 
+
+### []()
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#mb-ad)
 
