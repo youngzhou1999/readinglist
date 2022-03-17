@@ -55,7 +55,7 @@
 
 [DATA-EFFICIENT REINFORCEMENT LEARNING WITH SELF-PREDICTIVE REPRESENTATIONS{2007}](#self-predictive-representation)
 
-[Task-Agnostic Exploration via Policy Gradient of a Non-Parametric State Entropy Estimate{2007}}](#k-nearest-neighbors-estimate-of-the-state-distribution-entropy)
+[Task-Agnostic Exploration via Policy Gradient of a Non-Parametric State Entropy Estimate{2007}](#k-nearest-neighbors-estimate-of-the-state-distribution-entropy)
 
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
@@ -78,7 +78,7 @@
 
 [MODEL-PREDICTIVE POLICY LEARNING WITH UNCERTAINTY REGULARIZATION FOR DRIVING IN DENSE TRAFFIC{1901}](#model-predictive-policy-learning-with-uncertainty-regularization)
 
-
+[Bayesian surprise attracts human attention{09xx}](#bayesian-surprise-attracts-human-attention)
 
 
 ## VLN
@@ -1717,17 +1717,27 @@ do essemble controller(mpc like).
 
 [BACK TO LIST](#mb-ad)
 
-### 
+### Bayesian surprise attracts human attention
 
-### []()
+### [Bayesian surprise attracts human attention{09xx}](https://reader.elsevier.com/reader/sd/pii/S0042698908004380?token=D5439C91029828E5153F63C30383C7C331B51387C9DB3159366BE7D8AB4C41E0CB9F62CD7862027D9EEF01DE36EFC7A6&originRegion=us-east-1&originCreation=20220315163049)
 
 #### Main contribution and core idea
 
+contribution: proposed a formal Bayesian definition of surprise.
+
+core idea: suprise is defined by the average of the log-odd ratio which is the kl-div between prior and posterior:
+
+![](README.assets/bayesian_surprise.png)
+
 #### Surprising, difficult and confusing part
+
+**this paper claim that Bayesian surprise best characterizes where people look**
 
 #### Experiments and baselines
 
 #### How to apply and anywhere
+
+this idea is actually widely used in future papers.
 
 [BACK TO LIST](#mb-ad)
 
