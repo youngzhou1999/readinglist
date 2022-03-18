@@ -57,6 +57,8 @@
 
 [Task-Agnostic Exploration via Policy Gradient of a Non-Parametric State Entropy Estimate{2007}](#k-nearest-neighbors-estimate-of-the-state-distribution-entropy)
 
+[Behavior From the Void: Unsupervised Active Pre-Training{2103}](#behavior-from-the-void:-unsupervised --active-pre-training)
+
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
 
@@ -1000,6 +1002,20 @@ abi study: focus on time step, l2 loss, projection
 
 [BACK TO LIST](#exploration)
 
+### Behavior From the Void: Unsupervised Active Pre-Training
+
+### [Behavior From the Void: Unsupervised Active Pre-Training{2103}](https://arxiv.org/pdf/2103.04551.pdf)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
+
+[BACK TO LIST](#exploration)
+
 
 
 
@@ -1412,7 +1428,7 @@ useful in not differentiable setting. **can be considered to use when puzzle**.
 
 ### UMBRELLA
 
-### [UMBRELLA_ Uncertainty-Aware Model-Based Offline Reinforcement Learning Leveraging Planning{nips21workshop}]()
+### [UMBRELLA_ Uncertainty-Aware Model-Based Offline Reinforcement Learning Leveraging Planning{nips21workshop}](https://ml4ad.github.io/files/papers2021/UMBRELLA:%20Uncertainty-Aware%20Model-Based%20Offline%20Reinforcement%20Learning%20Leveraging%20Planning.pdf)
 
 #### Main contribution and core idea
 
