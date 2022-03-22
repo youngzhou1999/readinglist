@@ -53,11 +53,11 @@
 
 [Planning to Explore via Self-Supervised World Models{2005}](#plan-to-explore)
 
-[DATA-EFFICIENT REINFORCEMENT LEARNING WITH SELF-PREDICTIVE REPRESENTATIONS{2007}](#self-predictive-representation)
+[DATA-EFFICIENT REINFORCEMENT LEARNING WITH SELF-PREDICTIVE REPRESENTATIONS{2007}](#self-predictive-representations)
 
 [Task-Agnostic Exploration via Policy Gradient of a Non-Parametric State Entropy Estimate{2007}](#k-nearest-neighbors-estimate-of-the-state-distribution-entropy)
 
-[Behavior From the Void: Unsupervised Active Pre-Training{2103}](#behavior-from-the-void:-unsupervised --active-pre-training)
+[Behavior From the Void: Unsupervised Active Pre-Training{2103}](#behavior-from-the-void:-unsupervised-active-pre-training)
 
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
@@ -994,11 +994,35 @@ abi study: focus on time step, l2 loss, projection
 
 #### Main contribution and core idea
 
+contribution: proposed a novel exploration algo via state entropy maximization in reward-free setting.
+
+core idea: using **non-parametric** estimator(**K-NN estimator**) to calculate entropy and proposed trust-region entropy maximization.
+
+![image-20220322234408495](README.assets/mepol_obj.png)
+
+algo:
+
+![image-20220322234632324](README.assets/mepol_algo.png)
+
+where the calculation is as below(proof can be seen in appendix in original paper): 
+
+![image-20220322234613505](README.assets/mepol_calcu.png)
+
 #### Surprising, difficult and confusing part
+
+surprising: up stream pre-train(or called **representation learning**) to fast adapt to down stream task(with reward).
 
 #### Experiments and baselines
 
+exps are done in mujuco and minigrid.
+
+baslines: maxent. performance good.
+
+![image-20220322234925923](README.assets/mepol_exp.png)
+
 #### How to apply and anywhere
+
+vln pre-train or representation learning.
 
 [BACK TO LIST](#exploration)
 
