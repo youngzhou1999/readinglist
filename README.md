@@ -57,7 +57,7 @@
 
 [Task-Agnostic Exploration via Policy Gradient of a Non-Parametric State Entropy Estimate{2007}](#k-nearest-neighbors-estimate-of-the-state-distribution-entropy)
 
-[Behavior From the Void: Unsupervised Active Pre-Training{2103}](#behavior-from-the-void:-unsupervised-active-pre-training)
+[Behavior From the Void: Unsupervised Active Pre-Training{2103}](#{behavior-from-the-void}-unsupervised-active-pre-training)
 
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
@@ -1026,17 +1026,53 @@ vln pre-train or representation learning.
 
 [BACK TO LIST](#exploration)
 
-### Behavior From the Void: Unsupervised Active Pre-Training
+### {Behavior From the Void} Unsupervised Active Pre-Training
 
 ### [Behavior From the Void: Unsupervised Active Pre-Training{2103}](https://arxiv.org/pdf/2103.04551.pdf)
 
 #### Main contribution and core idea
 
+contribution: proposed a unsup-rl algo to explore efficiently in reward free envs.
+
+core idea: using knnestimate entropy in an abstract representation space and a contrastive learning loss.
+
+ ![image-20220323233302440](README.assets/apt_idea.png)
+
+knn part(similar to other paper):
+
+![image-20220323233558208](README.assets/apt_knn.png)
+
+algo(simple to understand): 
+
+![image-20220323233656800](README.assets/apt_algo.png)
+
 #### Surprising, difficult and confusing part
+
+surprising: the derivation of max-entropy exloration is good by variational lower bound.
+
+![image-20220323233456609](README.assets/apt_derive.png)
 
 #### Experiments and baselines
 
+exps are done in atrai and dmc. which are both good.
+
+baselines are tricky: 
+
+1.  dmc:
+
+one is count-based with drq(claimed as sota) and the other is drq from scratch.
+
+![image-20220323233925174](README.assets/apt_dmc.png)
+
+2. atari:
+
+many baselines: curl, drq, spr, visr.
+
+![image-20220323234030568](README.assets/apt_atari.png)
+
 #### How to apply and anywhere
+
+contrastive representation in ad for vae based model.
 
 [BACK TO LIST](#exploration)
 
