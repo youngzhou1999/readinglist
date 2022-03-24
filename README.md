@@ -59,6 +59,8 @@
 
 [Behavior From the Void: Unsupervised Active Pre-Training{2103}](#{behavior-from-the-void}-unsupervised-active-pre-training)
 
+[CURL: Contrastive Unsupervised Representations for Reinforcement Learning{2004}](#contrastive-unsupervised-representations-for-reinforcement-learning)
+
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
 
@@ -1058,7 +1060,7 @@ exps are done in atrai and dmc. which are both good.
 
 baselines are tricky: 
 
-1.  dmc:
+1.  dmc:
 
 one is count-based with drq(claimed as sota) and the other is drq from scratch.
 
@@ -1073,6 +1075,20 @@ many baselines: curl, drq, spr, visr.
 #### How to apply and anywhere
 
 contrastive representation in ad for vae based model.
+
+[BACK TO LIST](#exploration)
+
+### Contrastive Unsupervised Representations for Reinforcement Learning
+
+### [CURL: Contrastive Unsupervised Representations for Reinforcement Learning{2004}](https://arxiv.org/abs/2004.04136)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
