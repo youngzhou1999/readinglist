@@ -1084,11 +1084,43 @@ contrastive representation in ad for vae based model.
 
 #### Main contribution and core idea
 
+contribution: proposed contrastive representation **for data efficiency** in RL for the first time.
+
+core idea: contrastive loss by random crop.
+
+![image-20220325231531030](README.assets/curl_idea.png)
+
+algo:
+
+![image-20220325231620248](README.assets/curl_pipeline.png)
+
+![image-20220325231644065](README.assets/curl_algo.png)
+
 #### Surprising, difficult and confusing part
+
+easy to understand and **contrastive representation** easily adapt to other rl algo.
 
 #### Experiments and baselines
 
+exps are done in dmc with sac, atari with rainbow.
+
+**the author claim that CURL is the first image-based algorithm to nearly match the sample-efficiency of methods that use state-based features.**
+
+1. dmc
+
+baselines: planet,dreamer(both mb), sac
+
+![image-20220325232422316](README.assets/curl_dmc.png)
+
+2. atari
+
+baselines: rainbow, simple(dyna like in dnn), otrrainbow(2020), efftrainbow(2019)
+
+![image-20220325233409130](README.assets/curl_atari.png)
+
 #### How to apply and anywhere
+
+contrastive learning for better representation.
 
 [BACK TO LIST](#exploration)
 
