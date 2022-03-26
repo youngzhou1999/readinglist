@@ -61,6 +61,8 @@
 
 [CURL: Contrastive Unsupervised Representations for Reinforcement Learning{2004}](#contrastive-unsupervised-representations-for-reinforcement-learning)
 
+[Decoupling Representation Learning from Reinforcement Learning{2009}](decoupling-representation-learning-from-reinforcement-learning)
+
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
 
@@ -1098,7 +1100,7 @@ algo:
 
 #### Surprising, difficult and confusing part
 
-easy to understand and **contrastive representation** easily adapt to other rl algo.
+easy to understand and **contrastive representation** easily adapt to other rl algo.
 
 #### Experiments and baselines
 
@@ -1121,6 +1123,20 @@ baselines: rainbow, simple(dyna like in dnn), otrrainbow(2020), efftrainbow(2019
 #### How to apply and anywhere
 
 contrastive learning for better representation.
+
+[BACK TO LIST](#exploration)
+
+### Decoupling Representation Learning from Reinforcement Learning
+
+### [Decoupling Representation Learning from Reinforcement Learning{2009}](https://arxiv.org/abs/2009.08319)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
