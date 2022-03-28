@@ -61,7 +61,7 @@
 
 [CURL: Contrastive Unsupervised Representations for Reinforcement Learning{2004}](#contrastive-unsupervised-representations-for-reinforcement-learning)
 
-[Decoupling Representation Learning from Reinforcement Learning{2009}](decoupling-representation-learning-from-reinforcement-learning)
+[Decoupling Representation Learning from Reinforcement Learning{2009}](#decoupling-representation-learning-from-reinforcement-learning)
 
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
@@ -1132,11 +1132,48 @@ contrastive learning for better representation.
 
 #### Main contribution and core idea
 
+contribution: 
+
+1. proposed a offline ul called ATC to decouple jointly training of ul an rl.
+
+2. proposed encoder pre-training benchmark and find ATC outperforms other ul algos.
+
+core idea: curl(augmented contrast) with multi time-step **augmented temporal contrast**. 
+
+![image-20220328203341523](README.assets/atc_idea.png)
+
+algo: easy to understand
+
+![image-20220328203409793](README.assets/atc_algo.png)
+
 #### Surprising, difficult and confusing part
+
+why unsup rl: 
+
+1. purpose to learn visual fetures for rl without rewards.
+2. mutil-task(env demos) pretrain for fast down-stream finetune. 
+
+why contrastive learning(like atc here) work:
+
+- encourages the learned encoder to **extract meaningful elements** of the strcture of th mdp from obs.
 
 #### Experiments and baselines
 
+exps are done in dmc contral, dmc lab and atari. baselines: standard rl, curl(or ac), vae-t(a time delay to the target obs).
+
+performance: it beats curl.
+
+encoder benchmark: performance good.
+
+**multi-task encoder** is done, too(in mujuco). it shows generalization.
+
 #### How to apply and anywhere
+
+multi-time ul helps pre-training.
+
+#### Anything Further Reading
+
+driving simulators(Dosovit-skiy et al., 2017).
 
 [BACK TO LIST](#exploration)
 
