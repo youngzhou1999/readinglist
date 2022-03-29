@@ -86,6 +86,8 @@
 
 [Bayesian surprise attracts human attention{09xx}](#bayesian-surprise-attracts-human-attention)
 
+[Learning from All Vehicles{2203}](#learning-from-all-vehicles)
+
 
 ## VLN
 
@@ -1915,6 +1917,45 @@ core idea: suprise is defined by the average of the log-odd ratio which is the k
 #### How to apply and anywhere
 
 this idea is actually widely used in future papers.
+
+[BACK TO LIST](#mb-ad)
+
+### Learning from All Vehicles
+
+### [Learning from All Vehicles{2203}](https://arxiv.org/pdf/2203.11934.pdf)
+
+#### Main contribution and core idea
+
+contribution: a system that learns driving behavior from all vehicles with strong perception module which stands for SoTA in Carla.
+
+core idea:
+
+1. 3D segmentation and detection task for invariant representation in planning part.
+2. in planning it uses all vehicles to avoid collision.
+
+![image-20220329204423323](README.assets/lav_idea.png)
+
+#### Surprising, difficult and confusing part
+
+offline perception model: mapping and object detcetion(Strong representation).
+
+performance with perception along is very competitive.
+
+a single classifier for braking behavior.
+
+![image-20220329230226570](README.assets/lav_stop.png)
+
+[ztybsn]
+
+#### Experiments and baselines
+
+exps are done in leadboard. Performance very strong.
+
+![image-20220329230353600](README.assets/lav_exp.png)
+
+#### How to apply and anywhere
+
+strong perception.
 
 [BACK TO LIST](#mb-ad)
 
