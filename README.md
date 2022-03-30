@@ -88,6 +88,8 @@
 
 [Learning from All Vehicles{2203}](#learning-from-all-vehicles)
 
+[PsiPhi-Learning: Reinforcement Learning with Demonstrations using Successor Features and Inverse Temporal Difference Learning](#psiPhi-lsearning)
+
 
 ## VLN
 
@@ -1959,7 +1961,19 @@ strong perception.
 
 [BACK TO LIST](#mb-ad)
 
+### PsiPhi-Learning
 
+### [Reinforcement Learning with Demonstrations using Successor Features and Inverse Temporal Difference Learning](https://arxiv.org/pdf/2102.12560.pdf)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
+
+[BACK TO LIST](#mb-ad)
 
 
 
