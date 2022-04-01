@@ -1967,9 +1967,44 @@ strong perception.
 
 #### Main contribution and core idea
 
+contribution: 
+
+1. proposed an inverse RL algo(inverse temporal difference).
+2. RL with no-reward setting in successor features.
+
+![image-20220401194722464](README.assets/sciphi_idea.png)
+
+idea:
+
+$\psi$  as successor feature, $\Phi$ (called cumulants)as Reward Function.
+
+ITD: learn cumulants and successor features from other agent's data.
+
+**(ITD can be seen as a bc mix td algo).**
+
+using these features to accelerating RL with no reward demos.
+
+![image-20220401200043541](README.assets/sciphi_rewardloss.png)
+
+![image-20220401200125280](README.assets/sciphi_qloss.png)
+
+addition: can be seen as finetune what trained to be more self-consistent.
+
+![image-20220401200144226](README.assets/sciphi_featureloss.png)
+
 #### Surprising, difficult and confusing part
 
+it's hard to follow the def in this paper, **need to check the code for further understanding**.
+
+from a top view:
+
+1. it first train some **successor features** from other agent's data to better understanding **real env**.
+2. then use it to accelerate online rl. 
+3. finally it shows good ability to few-shot transfer.
+
 #### Experiments and baselines
+
+baselines: il method and irl method. not read carefully.
 
 #### How to apply and anywhere
 
