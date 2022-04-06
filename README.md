@@ -109,6 +109,8 @@
 
 [Visual-Language Navigation Pretraining via Prompt-based Environmental Self-exploration{2203}](#prompt-and-clip)
 
+[EnvEdit: Environment Editing for Vision-and-Language Navigation{2203}](#envedit)
+
 ## Others
 
 [System crash as dynamics of complex networks{PNAS16}](#system-crash-as-dynamics-of-complex-networks)
@@ -1475,6 +1477,43 @@ ablation study:
 2. all with rank loss(useful).
 
 #### How to apply and anywhere
+
+[BACK TO LIST](#vln)
+
+### EnvEdit
+
+### [EnvEdit: Environment Editing for Vision-and-Language Navigation{2203}](https://arxiv.org/abs/2203.15685)
+
+#### Main contribution and core idea
+
+contribution: proposed a new env aug method for vln task.
+
+core idea: edit env by three aspect: style(gan), appearance(gan) and object classes(mask).
+
+and the author ensemble these augs and show that these methods are complementary.
+
+![image-20220406204956649](README.assets/envedit_idea.png)
+
+#### Surprising, difficult and confusing part
+
+surprising: easy yet efficient.
+
+two types of methods in vln:
+
+1. env aug: diff envs to help generalize to new/unseen envs.
+2. data aug: pretrain with several tasks to help get more knowledge.
+
+**a more general way(from the author):** style is the best trade-off between efficiency and performance.
+
+#### Experiments and baselines
+
+baselines: vil-clip(no pre-train sota), hamt(pre-train sota).
+
+both helps performance.
+
+#### How to apply and anywhere
+
+mask grounding in revere(future going).
 
 [BACK TO LIST](#vln)
 
