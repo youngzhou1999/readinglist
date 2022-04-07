@@ -90,6 +90,8 @@
 
 [PsiPhi-Learning: Reinforcement Learning with Demonstrations using Successor Features and Inverse Temporal Difference Learning](#psiPhi-lsearning)
 
+[Learning by Watching{2106}](#learning-by-watching)
+
 
 ## VLN
 
@@ -2044,6 +2046,34 @@ from a top view:
 #### Experiments and baselines
 
 baselines: il method and irl method. not read carefully.
+
+#### How to apply and anywhere
+
+[BACK TO LIST](#mb-ad)
+
+### Learning by Watching
+
+### [Learning by Watching{2106}](https://arxiv.org/pdf/2106.05966.pdf)
+
+#### Main contribution and core idea
+
+contribution: propose a algo to utilize the vast portion of other experts' action(which is ignored before).
+
+core idea: learning il algo by inferring action. First transforming obs to their points of view, and inferring their expert actions.
+
+![image-20220407204416596](README.assets/lbw_idea.png)
+
+**what it actually done: **
+
+![image-20220407205945467](README.assets/lbw_inferact.png)
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+exps are done in benchmark and no-crash but with limited data to show the efficiency of the representation.
+
+![image-20220407210339991](README.assets/lbw_exp.png)
 
 #### How to apply and anywhere
 
