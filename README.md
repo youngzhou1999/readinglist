@@ -63,6 +63,8 @@
 
 [Decoupling Representation Learning from Reinforcement Learning{2009}](#decoupling-representation-learning-from-reinforcement-learning)
 
+[Bootstrap your own latent: A new approach to self-supervised Learning{2006}](#bootstrap-your-own-latent)
+
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
 
@@ -559,7 +561,7 @@ anywhere: several IB-based exploration paper.
 
 #### Anything to further read
 
-- [ ] SSL: [18] NIPS20. [46] ICLR21.
+- [x] SSL: [18] NIPS20. [46] ICLR21.
 
 - [x] Curiosity Bottleneck: [26] ICML19.
 
@@ -1167,7 +1169,7 @@ why contrastive learning(like atc here) work:
 
 #### Experiments and baselines
 
-exps are done in dmc contral, dmc lab and atari. baselines: standard rl, curl(or ac), vae-t(a time delay to the target obs).
+exps are done in dmc control, dmc lab and atari. baselines: standard rl, curl(or ac), vae-t(a time delay to the target obs).
 
 performance: it beats curl.
 
@@ -1182,6 +1184,35 @@ multi-time ul helps pre-training.
 #### Anything Further Reading
 
 driving simulators(Dosovit-skiy et al., 2017).
+
+[BACK TO LIST](#exploration)
+
+### Bootstrap your own latent
+
+### [Bootstrap your own latent: A new approach to self-supervised Learning{2006}](https://arxiv.org/abs/2006.07733)
+
+#### Main contribution and core idea
+
+contribution: proposed a new ssl algo to learn image representations without using negative pairs.
+
+core idea: using two networks referred as online and target.
+
+1. online predict the target's representation of the same image under different augmented view.
+2. update the target with a slow-moving average of the online at the same time.
+
+![image-20220408162007732](README.assets/byol_idea.png)
+
+#### Surprising, difficult and confusing part
+
+512tpu with bs 4096.
+
+#### Experiments and baselines
+
+exps are done in imagenet.
+
+#### How to apply and anywhere
+
+ssl/contrastive.
 
 [BACK TO LIST](#exploration)
 
