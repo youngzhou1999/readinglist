@@ -65,6 +65,8 @@
 
 [Bootstrap your own latent: A new approach to self-supervised Learning{2006}](#bootstrap-your-own-latent)
 
+[Bootstrap Latent-Predictive Representations for Multitask Reinforcement Learning{2004}](#bootstrap-latent-predictive-representations-for-multitask-reinforcement-learning)
+
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
 
@@ -1213,6 +1215,45 @@ exps are done in imagenet.
 #### How to apply and anywhere
 
 ssl/contrastive.
+
+[BACK TO LIST](#exploration)
+
+### Bootstrap Latent-Predictive Representations for Multitask Reinforcement Learning
+
+### [Bootstrap Latent-Predictive Representations for Multitask Reinforcement Learning{2004}](https://arxiv.org/abs/2004.14646)
+
+#### Main contribution and core idea
+
+contribution: proposed a algo to learn representation for multitask rl.
+
+core idea: 
+
+1. predicting latent embeddings of future observations(focus on capturing structured info about dynamics).
+2. reverse prediction for multi-step.
+
+![image-20220411212101229](README.assets/pbl_idea.png)
+
+loss:
+
+![image-20220411212250303](README.assets/pbl_forward_loss.png)
+
+![image-20220411212316333](README.assets/pbl_reverse_loss.png)
+
+#### Surprising, difficult and confusing part
+
+lantent embedding s are themselves trained to be predictive of the aforementioned representations allowing the agent to learn more about the key aspects of the env dynamics.
+
+steps: 20.
+
+#### Experiments and baselines
+
+epxs are done in dmlab-30 and atari-57 multi-task setting.
+
+performance good.
+
+#### How to apply and anywhere
+
+reverse prediction.
 
 [BACK TO LIST](#exploration)
 
