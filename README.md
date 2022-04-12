@@ -67,6 +67,8 @@
 
 [Bootstrap Latent-Predictive Representations for Multitask Reinforcement Learning{2004}](#bootstrap-latent-predictive-representations-for-multitask-reinforcement-learning)
 
+[Pretraining Representations for Data-Efficient Reinforcement Learning{2106}](#pretraining-representations-for-data-efficient-reinforcement-learning)
+
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
 
@@ -1254,6 +1256,40 @@ performance good.
 #### How to apply and anywhere
 
 reverse prediction.
+
+[BACK TO LIST](#exploration)
+
+### Pretraining Representations for Data-Efficient Reinforcement Learning
+
+### [Pretraining Representations for Data-Efficient Reinforcement Learning{2106}](https://arxiv.org/abs/2106.04799)
+
+#### Main contribution and core idea
+
+contribution: proposed a algo to learn good representation for unsup rl(upstream pretrain).
+
+core idea: this is a follow work of spr. it consists of 3 parts:
+
+1. spr: self predictive representation
+2. inverse modeling(classifcation for a_t)
+3. goal-conditioned rl
+
+algo called **sgi**(spr with goal-conditioned and inverse modeling)
+
+![image-20220412232819969](README.assets/sgi_idea.png)
+
+#### Surprising, difficult and confusing part
+
+there are many good papers in it which is good for further reading.
+
+#### Experiments and baselines
+
+envs: atari 100k with different type of data.
+
+baselines: visr, apt, cpt, atc, (no pretrain following)simple, der, drq, spr.
+
+abi study: 1. no pretrain 2. exploratory data 3. offline data.
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
