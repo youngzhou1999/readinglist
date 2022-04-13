@@ -69,6 +69,8 @@
 
 [Pretraining Representations for Data-Efficient Reinforcement Learning{2106}](#pretraining-representations-for-data-efficient-reinforcement-learning)
 
+[Fast Task Inference with Variational Intrinsic Successor Features](#visr:-fast-task-inference-with-variational-intrinsic-successor[-features)
+
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
 
@@ -1288,6 +1290,20 @@ envs: atari 100k with different type of data.
 baselines: visr, apt, cpt, atc, (no pretrain following)simple, der, drq, spr.
 
 abi study: 1. no pretrain 2. exploratory data 3. offline data.
+
+#### How to apply and anywhere
+
+[BACK TO :LIST](#exploration)
+
+### VISR: Fast Task Inference with Variational Intrinsic Successor Features
+
+### [Fast Task Inference with Variational Intrinsic Successor Features{1906}](https://arxiv.org/abs/1906.05030)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
 
 #### How to apply and anywhere
 
