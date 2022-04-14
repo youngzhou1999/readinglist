@@ -69,7 +69,7 @@
 
 [Pretraining Representations for Data-Efficient Reinforcement Learning{2106}](#pretraining-representations-for-data-efficient-reinforcement-learning)
 
-[Fast Task Inference with Variational Intrinsic Successor Features](#visr:-fast-task-inference-with-variational-intrinsic-successor[-features)
+[Fast Task Inference with Variational Intrinsic Successor Features](#visr:-fast-task-inference-with-variational-intrinsic-successor-features)
 
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
@@ -1301,11 +1301,42 @@ abi study: 1. no pretrain 2. exploratory data 3. offline data.
 
 #### Main contribution and core idea
 
+contribution: combine two novel techniques
+
+1. train mdp by rewarding a policy for being distinguishable from other policies.
+2. successor features.
+
+proposed a unsup rl algo for fast task inference.
+
+core idea: learn controllable features based on behavioral mutual information(which is a class of method).
+
+**force the objective in Mutual Information to be equal with successor features**.
+
+![image-20220414205720917](README.assets/visr_core.png)
+
+pipeline: two nn respect to reward and value. w as the task vector.
+
+![image-20220414205750291](README.assets/visr_pipeline.png)
+
+algo: 
+
+![image-20220414210854903](README.assets/visr_algo.png)
+
 #### Surprising, difficult and confusing part
+
+difficult part: equation 10 w from Von Mises-Fisher distribution(the paper says this is one way).
 
 #### Experiments and baselines
 
+exps are done in atari57. baseline: diayn. and other full rl algo such as ppo and simple.
+
+all task is inference for 100k.
+
+beat diayn very hard.
+
 #### How to apply and anywhere
+
+successor feature is more familiar to me.(a reward and a value).
 
 [BACK TO LIST](#exploration)
 
