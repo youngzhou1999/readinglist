@@ -69,7 +69,9 @@
 
 [Pretraining Representations for Data-Efficient Reinforcement Learning{2106}](#pretraining-representations-for-data-efficient-reinforcement-learning)
 
-[Fast Task Inference with Variational Intrinsic Successor Features](#visr:-fast-task-inference-with-variational-intrinsic-successor-features)
+[Fast Task Inference with Variational Intrinsic Successor Features](#visr)
+
+[Muesli: Combining Improvements in Policy Optimization{2104}](#muesli)
 
 ## Mb-AD
 [Learning to drive from a world on rails{2105}](#world-on-rails):wrench:
@@ -1295,7 +1297,7 @@ abi study: 1. no pretrain 2. exploratory data 3. offline data.
 
 [BACK TO :LIST](#exploration)
 
-### VISR: Fast Task Inference with Variational Intrinsic Successor Features
+### VISR
 
 ### [Fast Task Inference with Variational Intrinsic Successor Features{1906}](https://arxiv.org/abs/1906.05030)
 
@@ -1337,6 +1339,63 @@ beat diayn very hard.
 #### How to apply and anywhere
 
 successor feature is more familiar to me.(a reward and a value).
+
+[BACK TO LIST](#exploration)
+
+### Muesli
+
+### [Muesli: Combining Improvements in Policy Optimization{2104}](https://arxiv.org/abs/2104.06159)
+
+#### Main contribution and core idea
+
+contribution: proposed a novel policy update algo which combines regularized policy optimization with model learning as an auxiliary loss.
+
+core idea:
+
+1. regularized policy optimization(clipped mpo)
+
+obj:
+
+![image-20220415182544309](README.assets/muesli_obj.png)
+
+policy:
+
+![image-20220415182327227](README.assets/muesli_cmpo.png)
+
+more detail about approximating kl:
+
+![image-20220415182510436](README.assets/muesli_kl_comp.png)
+
+2. model learning: using it to get a mutli-step approximation.
+
+specifically, the model is used to 
+
+- estimate the action value q, which is used to estimate the multi=step return.
+- estimate advantage.
+
+#### Surprising, difficult and confusing part
+
+the understanding for policy optimization.
+
+1. the defi:
+
+![image-20220415182922462](README.assets/muesli_po.png)
+
+2. the good tricks/essential for good policy training.
+
+![image-20220415183044836](README.assets/muesli_potricks.png)
+
+#### Experiments and baselines
+
+deepmind:)
+
+#### How to apply and anywhere
+
+good explain for the following two thing.
+
+model learning for multi-time value learning.
+
+policy optimization regularization.
 
 [BACK TO LIST](#exploration)
 
