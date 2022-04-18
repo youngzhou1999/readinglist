@@ -48,6 +48,8 @@
 
 [Bootstrap Latent-Predictive Representations for Multitask Reinforcement Learning{2004}](#bootstrap-latent-predictive-representations-for-multitask-reinforcement-learning)
 
+[The Value-Improvement Path: Towards Better Representations for Reinforcement Learning{2006}](the-value-Improvement-path)
+
 ### Before 2020
 
 [VIME: Variational Information Maximizing Exploration{1605}](#vime):+1:
@@ -1437,6 +1439,36 @@ good explain for the following two thing.
 model learning for multi-time value learning.
 
 policy optimization regularization.
+
+[BACK TO LIST](#exploration)
+
+### The Value Improvement Path
+
+### [The Value-Improvement Path: Towards Better Representations for Reinforcement Learning{2006}](https://arxiv.org/abs/2006.02243)
+
+#### Main contribution and core idea
+
+contribution: 
+
+1. do much work on how to do representation to better approximate the value improvement path.
+
+![image-20220418233250560](README.assets/vip_idea.png)
+
+2. proposed two novel algos(auxiliary tasks) to approximate  
+
+core idea: 
+
+![image-20220418234839583](README.assets/vip_repre.png)
+
+#### Surprising, difficult and confusing part
+
+reasons are good.
+
+#### Experiments and baselines
+
+atari with dqn with proposed tasks.
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
