@@ -48,7 +48,9 @@
 
 [Bootstrap Latent-Predictive Representations for Multitask Reinforcement Learning{2004}](#bootstrap-latent-predictive-representations-for-multitask-reinforcement-learning)
 
-[The Value-Improvement Path: Towards Better Representations for Reinforcement Learning{2006}](the-value-Improvement-path)
+[The Value-Improvement Path: Towards Better Representations for Reinforcement Learning{2006}](#the-value-Improvement-path)
+
+[Image Augmentation Is All You Need: Regularizing Deep Reinforcement Learning from Pixels](#drq)
 
 ### Before 2020
 
@@ -1458,7 +1460,13 @@ contribution:
 
 core idea: 
 
+main claim: **approximate the past value-inprovement path may better approximate future functions on this path.**
+
 ![image-20220418234839583](README.assets/vip_repre.png)
+
+past policies: do policy optimization with the past k policies.
+
+past mixture: soft version of past policies. using a different lr for each task and using their average as the bootstrap target for all tasks.
 
 #### Surprising, difficult and confusing part
 
@@ -1467,6 +1475,38 @@ reasons are good.
 #### Experiments and baselines
 
 atari with dqn with proposed tasks.
+
+#### How to apply and anywhere
+
+[BACK TO LIST](#exploration)
+
+### DrQ
+
+### [Image Augmentation Is All You Need: Regularizing Deep Reinforcement Learning from Pixels](https://arxiv.org/abs/2004.13649)
+
+#### Main contribution and core idea
+
+contribution: proposed a simple yet efficient algo for rl from pixels.
+
+core idea: using data augmentation.
+
+explain in mdp setting: **regularizing the value function through transformations of the input state.** 
+
+![image-20220419231040905](README.assets/drq_idea.png)
+
+optimize objective:
+
+![image-20220419231135620](README.assets/drq_obj.png)
+
+#### Surprising, difficult and confusing part
+
+easy reasoning and good performance.
+
+#### Experiments and baselines
+
+atari 100k data efficiency.
+
+dmc.
 
 #### How to apply and anywhere
 
