@@ -52,6 +52,8 @@
 
 [Image Augmentation Is All You Need: Regularizing Deep Reinforcement Learning from Pixels](#drq)
 
+[LEARNING INVARIANT REPRESENTATIONS FOR REINFORCEMENT LEARNING WITHOUT RECONSTRUCTION{2006}](#deep-bisimulation-for-control)
+
 ### Before 2020
 
 [VIME: Variational Information Maximizing Exploration{1605}](#vime):+1:
@@ -1509,6 +1511,36 @@ atari 100k data efficiency.
 dmc.
 
 #### How to apply and anywhere
+
+[BACK TO LIST](#exploration)
+
+### Deep Bisimulation for Control
+
+### [LEARNING INVARIANT REPRESENTATIONS FOR REINFORCEMENT LEARNING WITHOUT RECONSTRUCTION{2006}](https://arxiv.org/pdf/2006.10742.pdf)
+
+#### Main contribution and core idea
+
+contribution: a novel algo to learn good representations() for rl with image input.
+
+![image-20220420234855785](README.assets/dbc_idea.png)
+
+core idea: using bisimulation theory to build latent representation.
+
+![image-20220420235001029](README.assets/dbc_algo.png)
+
+objective: bellman operator.
+
+![image-20220420235057600](README.assets/dbc_obj.png)
+
+#### Surprising, difficult and confusing part
+
+bisimulation.
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
+
+
 
 [BACK TO LIST](#exploration)
 
