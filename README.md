@@ -30,6 +30,8 @@
 
 [Muesli: Combining Improvements in Policy Optimization{2104}](#muesli)
 
+[Towards Robust Bisimulation Metric Learning{2110}](#towards-robust-bisimulation-metric-learning)
+
 ### 2020
 
 [Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning{2008}](#dynamics-generalization-via-information-bottleneck)
@@ -1540,7 +1542,19 @@ bisimulation.
 
 #### How to apply and anywhere
 
+[BACK TO LIST](#exploration)
 
+### Towards Robust Bisimulation Metric Learning
+
+### [Towards Robust Bisimulation Metric Learning{2110}](https://arxiv.org/pdf/2110.14096.pdf)
+
+#### Main contribution and core idea
+
+#### Surprising, difficult and confusing part
+
+#### Experiments and baselines
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
