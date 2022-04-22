@@ -1550,11 +1550,29 @@ bisimulation.
 
 #### Main contribution and core idea
 
+contribution: explain the **embedding pathologies(embedding collapse and explosion)** in bisimulation representation and give a theoretical analyze.
+
+core idea: explanation of dbc by using
+
+1.  inverse dynamic(classification on action at time t).
+
+![image-20220422212811222](README.assets/robust_dbc_ir.png)
+
+2. intrinsic reward(prediction error in latent space).
+
+![image-20220422212736971](README.assets/robust_dbc_id.png)
+
 #### Surprising, difficult and confusing part
+
+diff: bound...
 
 #### Experiments and baselines
 
+mujuco
+
 #### How to apply and anywhere
+
+inner exploration under bisimulation framework.
 
 [BACK TO LIST](#exploration)
 
