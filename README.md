@@ -32,6 +32,9 @@
 
 [Towards Robust Bisimulation Metric Learning{2110}](#towards-robust-bisimulation-metric-learning)
 
+[Beyond Fine-Tuning:
+Transferring Behavior in Reinforcement Learning{2102}](#transferring-behavior)
+
 ### 2020
 
 [Dynamics Generalization via Information Bottleneck in Deep Reinforcement Learning{2008}](#dynamics-generalization-via-information-bottleneck)
@@ -1573,6 +1576,36 @@ mujuco
 #### How to apply and anywhere
 
 inner exploration under bisimulation framework.
+
+[BACK TO LIST](#exploration)
+
+### Transferring Behavior
+[Beyond Fine-Tuning:
+Transferring Behavior in Reinforcement Learning{2103}](https://arxiv.org/abs/2102.13515)
+
+#### Main contribution and core idea
+
+contribution: argue the pretrain-finetune pipeline with nn  weights is not enough for rl and proposed a new method to do transfer which is complementary to nn weights.
+
+core idea: leverage pre-trained policies for exploration.
+
+ ![image-20220428222813445](README.assets/bt_idea.png)
+
+algo:
+
+![image-20220428222851843](README.assets/bt_algo.png)
+
+#### Surprising, difficult and confusing part
+
+how to do exploration in unsupervised rl can be seen as a good question.
+
+#### Experiments and baselines
+
+hard exploration games in atari. exps are so long.
+
+using rnd/r2d2 as policy and finetuned with BT.
+
+#### How to apply and anywhere
 
 [BACK TO LIST](#exploration)
 
